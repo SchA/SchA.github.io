@@ -15,10 +15,12 @@
     <meta name="apple-mobile-web-app-title" content="Hello World"> 
     <meta name="msapplication-TileImage" content="images/hello-icon-144.png">  
     <meta name="msapplication-TileColor" content="#FFFFFF">
+	<meta http-equiv="Cache-control" content="no-cache">
+	<meta http-equiv="Expires" content="-1">
 <body class="fullscreen">
   <div class="container">
 <h2>What do you wanna drive?</h2>
-
+<p>version 0.3</p>
 
 <form>
 <table>
@@ -134,6 +136,8 @@ AirHandling
 <p id="result">Test</p>
 
 <script>
+	window.location.reload(true);
+
 	class constellation {
 		constructor(driver,body,tire,glider) {
 			this.driver=driver;
