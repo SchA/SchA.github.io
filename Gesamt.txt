@@ -1,0 +1,2520 @@
+So, dann beginnen wir mit ein paar Folien, also die Schulungen sind immer nur aufgebaut.
+Ich zeige ein paar Folien, erkläre etwas und dann gucken wir uns das im System live an.
+Und wie wir uns in das Schulungssystem live anmelden, das zeige ich auch dann nochmal.
+Ich schalte jetzt auch nochmal mein Video aus, weil das anbreitet kostet.
+Herr Maxwell, Sie können auch gerne Ihr Video ausschalten.
+Das brauchen wir im Moment nicht. Sie wissen ja jetzt alle, wie ich aussehe.
+Und dann fangen wir mal an.
+Mit einer Einführung in die Szenen und die Szenen-Grundlagen.
+Besten Folien alle sehen.
+Bis jetzt nicht. Ja und nein.
+Ja, es ist mein Fehler. Ich vergesse das immer wieder. Ich bin ja auch nicht so wütend.
+Ich muss den Inhalt ein. So, jetzt.
+Jetzt den Folien. Soll ich nochmal aufrufen.
+Genau. Jetzt sehen Sie die Folien, hoffe ich.
+Ja.
+Gut. Also wir fangen an mit den Systemen und den System-Grundlagen für einen Überblick, wie das System aufgebaut ist.
+Und als erstes, was macht das TSI-BMS überhaupt?
+Wir sagen immer, dass das TSI-BMS die Materialstufe innerhalb eines Lagers abbildet.
+Das heißt, alle Bewegungen innerhalb eines Lagers, vom Waneingang über die Einlagerung, Umlagerung innerhalb des Lagers,
+die Auslagerung für Aufträge, kommissionieren, verpacken, verwandt, all das wird von einem TSI-BMS gesteuert.
+Die Information, die wir dafür verwalten müssen, ist immer, was enthält das Lager, also welche Bestände haben wir im Lager,
+wie viel, also in welcher Menge liegt da ein bestimmter Attikasur, wie liegt der vor, auf welchen Transportmittel,
+auf welcher Boxen, wo auch immer, und wo genau liegen die Bestände.
+Das heißt, das TSI-BMS kennt immer platzgenau den Bestand im Lager.
+Und typischerweise werden Daten zwischen einem TSI-BMS-System und einem Rost-System ausgetauscht werden.
+Was haben Sie denn ERP-System, wenn ich nachfragen darf?
+Haben Sie FAP oder Navision oder haben Sie ein eigenes?
+Ja, wir haben ein großes spezifisches System, da habe ich two factory men,
+aber sehr gut, nur wenige spezifische Anwender im Bereich der Suche und so.
+Wir kennen viele Kunden, die mit SAT arbeiten, aber wir können auch zwei andere Systeme schlicht schnell haben.
+Die wichtigsten Objekte, mit denen wir im TSI-BMS arbeiten, sind einmal der Platz, also wo liegt ein Bestand?
+Der Artikel, was haben wir denn? Bestand, das ist die Menge an einem Artikel mit gleichen Merkmalen,
+also die 100 Stück Fleischstifte grünen oder 50 Stück Butter mit MHB, ein breitlicher Börter.
+Das wäre also der Bestand oder die Bestandsmenge.
+Dann sprechen wir von Transporteinheiten. Die Transporteinheit ist das Ladehilfsmittel.
+Das ist das Element, die Einheit, die zur Lagerung oder Transporttransistenzen dient.
+Die kann leer sein, wir können Ständer auf so einer TE haben und die können auf andere TE fahren.
+Wahrscheinlich haben wir die Möglichkeit, auf TE-Türme zu dienen.
+Also wir sprechen im TSI-BMS immer nur von TE und nicht von Ladehilfsmitteln oder andere Begriffe.
+Wir sprechen immer von TE und wissen ganz wichtig, was das ist.
+Dann haben wir den Transportauftrag. Der Transportauftrag sorgt dafür, dass die Bestände durch das Lager bewegt werden können.
+Der bezieht sich immer auf eine Transporteinheit und der Transportauftrag hat immer einen Quellsatz, einen Zielsatz
+und außerdem noch einen Status und so ein Transportauftrag kann angelegt sein, er kann unterwegs sein, er kann soviert sein.
+Da gucken wir dann nachher nochmal drauf.
+Dann haben wir natürlich die Avise mit Avisposition, die die eingehenden Bestände ankündigen und die Aufträge mit Auftragsposition,
+die dafür sorgen, dass die Bestände das Lager wieder verlassen.
+Und last but not least haben wir die Toure. Über die Touren verbreiten wir letztendlich die Fahrzeuge,
+auf die dann beim Verband Bestände drauf geladen werden.
+Wenn Sie Fragen haben, unterbrechen Sie mich bitte gleich, das ist glaube ich am einfachsten.
+Ansonsten rede ich einfach weiter.
+So, hier haben wir einen Überblick über die Aufgaben des TLS IDMS.
+Diese Aufgaben werden von vielfältigen verschiedenen Modulen durchgeführt, das sind diese vielen grünen Kästchen hier.
+Wir sprechen bei den Modulen von den sogenannten TLS IDMS Domänen.
+Wir finden zum Beispiel hier oben beim Waren-Eingang.
+Beim Waren-Eingang haben wir die Avise und die Ware, die reinkommt.
+Dann haben wir das Modul Waren-Eingangsmanagement, das sorgt für die Zugangsbearbeitung.
+Dann kommt das Qualitätsmanagement, wenn man das dann braucht.
+Also das ist ein Modul, das man benutzen oder auch nicht benutzen kann.
+Da kann man zum Beispiel das Ergebnis der Qualitätsprüfung erfassen,
+die Bestandsqualitation entsprechend ändern, solche Dinge tun.
+Und dann haben wir das Einlagermanagement, das sucht den letzten schönsten Lagerplatz für einen Bestand
+nach Wegen, die sehr komplex werden können.
+Auftragszeitlich haben wir einmal das Auftragsmanagement.
+Das beinhaltet die Übernahme der Aufträge von dem Rufsystem oder auch das manuelle Anliegen von Aufträgen.
+Dann haben wir im Auftragsmanagement die Möglichkeit, die Auftragsdaten wie jedenfalls nochmal anzupassen,
+Verbandtermin, Priorität und natürlich auch die Aufträge manuell zu starten.
+Es ist auch möglich, die Aufträge automatisch zu starten, aber in der Regel wollen die meisten die Aufträge manuell starten.
+Danach kommt das Bereitstellenmanagement.
+Das Bereitstellenmanagement sorgt dafür, dass die Bestände dahin kommen, wo sie gebraucht werden.
+Also das ist für das Booting durch das Lagerzustellen.
+Dann haben wir das Kommissioniermanagement, das organisiert die Kommissionierung.
+Wir kennen die Warenverbandkommissionierung und die Manzowarekommissionierung.
+Manzowarekommissionierung mit Papier oder mit MBT, also das sind alles von den Kommissioniermanagements.
+Dann haben wir das Verpackungsmanagement, wie der Name schon sagt, ist für die Verpackung zuständig.
+Und das Verbandmanagement, da werden die Touren verwaltet und auch die Bestände des letzten Endes,
+auch die Touren, die Fahrzeuge werden aufgebaut.
+Dann haben wir hier nochmal das Inventurmanagement, da haben wir ein eigenes Produkt für.
+Da haben wir die Möglichkeit, Bestände in den Inventurkode auszunehmen und dann eine Inventur durchzuführen.
+Wir kommen nachher später nochmal beim Bestandsmanagement, nochmal tiefer auf das Inventurmanagement.
+Was wollte ich jetzt eben sagen?
+Auf die Inventur kann man mit Papier oder mit MBT durchführen.
+Dann haben wir hier unten das Topologiemanagement.
+Da ist die ganze Lagertopologie drin abgebildet.
+Da haben wir die Möglichkeit, Teste zu scaren, Teilgeheimreiche zu scaren, ähnliche Dinge.
+Dann haben wir die TE-Management, da wirst du sehen, welche TE-Züge es gibt,
+dann mit welchen Nummernketzen die versehen sind und ähnliche Dinge.
+Das Bestandsmanagement ermöglicht uns, die Bestände zu verwalten,
+Attributes des Bestands zu verändern, Mengenkorrekturen durchzuführen.
+Das Inventurmanagement gehört eigentlich hier mit in das Bestandsmanagement.
+Aber weil es so wichtig ist, haben wir das auch nochmal ausgeführt.
+Das Transportmanagement ist klar, sorgt für die Transport-Ignosis-Lager.
+Dann haben wir noch einen Ruhl, das heißt Transport-Comfort.
+Dieses SLS, Schafler Leitsystem, das verweilt die ganzen Mobil-Terminals.
+Und da sind auch die Wege und Entfernungen hinterlegt.
+Dann haben wir noch Nachschubmanagement.
+Wenn wir aus Nachschubbereichen und Kommissionierbereichen Nachschub brauchen,
+das wird dann gerne Nachschubmanagement festgelegt.
+Dann gibt es verschiedene Betriebsüberwachungsmöglichkeiten,
+Zähler und Statistiken.
+Wir haben eine Vielzahl von Statistiken,
+z.B. die Gefehnisse im Lager.
+Wir haben hier eine Betriebsüberwachung,
+die die Möglichkeit hat, so potenzielle Problemzustände zu identifizieren.
+Dann haben wir die Stammdaten.
+Da werden sowas wie Geschäftspartner, Lehrgutkonten, Länder, Sprachen,
+solche Dinge verweilt, Mengeneinheiten.
+Dann das ganze Thema Drucken und Parameter.
+Wir haben eine ganze Reihe von Parameter, die das System steuern
+und die von unten auf geändert werden können.
+Das findet man also hier in diesem Parameter-Management.
+Dann gibt es das Kapitel oder die Domäne-Administration.
+Da befindet sich z.B. die Rechneverwaltung drin.
+Dann gibt es das Schnittstellen-Management.
+Da haben wir die Konfiguration von den Schnittstellen,
+die eigenen Ausgänge werden da verwaltet.
+Und dann haben wir nochmal die Archivierung, wenn dann das gekauft worden ist.
+Das ist ein eigenes Modul.
+Damit werden operative Daten nach einer bestimmten Zeit und nach bestimmten Regeln
+in ein Archivsystem rübergezogen, damit sie das operative System nicht so belasten,
+damit das operative System schlank bleibt.
+Man kann aber mit genau den gleichen Masken, wie man in das operative Geschehen
+reinschauen kann, in das Archivsystem reinschauen.
+Das werde ich dann nachher nochmal zeigen.
+Dann haben wir nochmal ein paar Zusatzmodule.
+Das ist einmal das Dashboard.
+Da haben wir die Möglichkeit, Reports im Dialog anzuzeigen.
+Da kann man Auswertungen, die über nur Reports gemacht werden, dann am Bildschirm anzeigen.
+Dann haben wir das Event-Management.
+Damit können wir bestimmte Ereignisse im System definieren und auch überwachen.
+Zum Beispiel kann ich überwachen, dass ein Auftrag spätestens,
+sag ich mal vier Stunden nachdem er gestartet worden ist,
+dass ein Auftrag schon mal verpasst worden sein muss oder abgeschlossen sein muss.
+Und solche Ereignisse und Folgeereignisse oder solche Ereignisskombinationen
+kann ich überwachen und wenn das nicht passiert, kann ich dann auch Alarm auslösen.
+Das ist das Event-Management.
+Dann gibt es das Dock- und das Jagdmanagement.
+Das Dock-Management ist eine Zeitfenstersteuerung für die Touren,
+für die Waren-Ein- und Ausgangs-Touren.
+Da hat man die Möglichkeit, Zeitfenster zu buchen.
+Und unter uns setzen auch über so ein Website,
+kann man von außen sagen, mein LKW kommt dann und dann
+und ich möchte dieses Zeitfenster an dieses Tor buchen.
+Das ist das Dock-Management.
+Und das Jagdmanagement beinhaltet Hofstörungen.
+Das heißt, das normale PVI BMS verwaltet natürlich nur ihr altes Lager.
+Mit dem Jagdmanagement haben wir die Möglichkeit, Hofplätze mitzuverwalten
+und an kommenden LKW zum Beispiel Plätze im Hof zuzuweiten
+und diese dann auch zu verwalten.
+Das nächste Modul hier ist das Ressourcen-Management.
+Da habe ich die Möglichkeit, das operative Geschehen
+in einzelne Aufgaben zu unterteilen,
+die Aufgaben in einzelne Operationen zu unterteilen
+und für diese Operationen Ressorte zu definieren,
+also zum Beispiel Mitarbeiter oder Beräte oder Plätze.
+Ich habe dann die Möglichkeit, wenn ich ein Auftragstool zum Beispiel übernehme,
+zu gucken, ob unsere Aufgaben, die zu erfüllen sind,
+wie sieht es aus mit meinen Ressorten, die ich über- oder unterlastet.
+Und dann entsprechend die Ressorten anpassen
+oder die Aufträge, die zu bearbeiten sind, anpassen.
+Dann haben wir das adaptive Szenario-Management.
+Das ist ein sehr mächtiges Tool.
+Damit haben wir die Möglichkeit, für unterschiedliche Szenarien,
+also für unterschiedliche Situationen,
+unterschiedliche Konfigurationen reinzuladen in das System.
+Ein ganz einfaches Beispiel.
+Ich habe den normalen Tagesbetrieb und ich habe einen Nachtschicht.
+Im Tagesbetrieb werden meines Weges alle Pappplätze benutzt,
+es werden alle Versorgungsplätze benutzt,
+es werden alle Terminals, alle MDP benutzt und so weiter und so fort.
+Und im Nachtschichtbetrieb habe ich nur noch ein Pappplatz,
+ein Versorgungsplatz und nur noch drei MDP, die unterwegs sind.
+Und dann kann ich einfach mit einem Knopfdruck von dem Tages-Szenario
+auf das Nacht-Szenario umschalten.
+Ich kann Szenarien definieren, Weihnachtsgeschäft oder Ostern-Geschäft,
+wo ich dann ganz andere Arbeitsweiten brauche oder Regeln brauche.
+Ich kann dann so zwischen diesen Szenarien umschalten
+und das Ganze kann man sogar automatisieren, indem man sagt,
+wenn diese Situation so und so eintritt, dann geht es umschalten automatisch.
+Dann haben wir den Bare House Service Broker.
+Damit kann man zwischen verschiedenen PMS-Systemen kommunizieren.
+Dann gibt es das Billingsystem oder das Billingmodul dann, hat es gesagt.
+Mit dem Billing habe ich die Möglichkeit, aufgrund der Statistiken,
+die ohnehin geführt werden, auch Rechnungen zu erstellen
+für die Leistungen, die erbracht worden sind.
+Die Leistungen liegen sich ja in den Statistiken wieder
+auf Basis dessen, kann ich dann auch Rechnungen erstellen.
+Dann gibt es noch den adaptiven Aufsatzstart.
+Da habe ich die Möglichkeit, so eine Art Vorkraft zu machen,
+zu gucken, wenn ich eine gewisse Menge an Aufträgen starte,
+wie würde die Auslastung im Lager sein?
+Also ich definiere, dass die verschiedenen Lagerbereiche
+gehen da ein, ich kann verschiedene Parameter
+mit unterschiedlicher Ansichtung eingeben.
+Das hat dann die Möglichkeit, wenn ich diese Aufträge starte,
+wie ist dann meine Auslastung im Lager und dann kann ich die Kriterien ändern
+und dann kann ich sagen, wie ist dann die Auslastung?
+Also da habe ich die Möglichkeit, die Aufträge in Abhängigkeit
+von der Auslastung des Lagers aufzustarten.
+Dann haben wir das große Modul Verbrauchsteuer.
+Das ist ein relativ neues Modul.
+Da geht es darum, dass wir ein Steuerlager führen können.
+Das heißt, zum Beispiel, wenn ein Lager Alkoholika enthält,
+dann können diese Alkoholika versteuert eingelagert werden
+oder unversteuert eingelagert werden.
+Dann müssen die Unversteuerten das Lager verlassen,
+dann müssen die versteuert werden,
+es muss ein Steuerbuch geführt werden,
+es müssen Steuerbuchungen gemacht werden.
+All das macht dieses Modul Verbrauchsteuer.
+Und dann haben wir noch dieser wichtige Teil,
+das ist das automatisierte Testen.
+Wir haben ein eigenes Testtool,
+was so automatisch Testflotte durchführt.
+Das ist einmal für das Testen von neuen Teachers sehr interessant.
+Das ist für das manuelle Testen wichtig.
+Und das wird bei uns in der Schule auch zum Trabe kommen,
+aber dann kann ich nachher noch ein paar Dinge dazu.
+Das war jetzt ein bisschen ein Überblick über das TSI WMS,
+über die Mächtigkeit des WMS in Kombination mit dem TSI WMS.
+Den folgenden Auftrag von dem Hostsystem ist interessant.
+Einmal die Bereitstellung der Artikeldaten,
+das heißt in der Regel bekommen wir die Artikelstammdaten von einem Hostsystem.
+Ich weiß nicht, ob das bei Ihnen auch der Fall sein wird.
+Ein Hostsystem wird auf der Basis von Artikeln summen,
+die Artikel schnüren, das heißt das Hostsystem weiß,
+ich habe 20.000 große Bleistifte, aber nicht wo und wie sie liegen.
+Das TSI WMS weiß genau, 50.000 Bleistifte liegen auf Platz A,
+50.000 Bleistifte auf Platz C und so weiter und so fort.
+Das Hostsystem übermittelt auch typischerweise die Abise,
+die wahren Eingänge abisieren und das Hostsystem übermittelt in der Regel auch dann die Aufträge.
+Es ist aber möglich ein TSI WMS Abise manuell anzulegen und auch Aufträge manuell anzulegen
+und das werden wir dann auch im Laufe der Führung tun.
+Hier nochmal ein Blick auf eine mehr oder weniger typische Systemlandschaft.
+Wir haben einmal hier einen PSIDM Server,
+also da läuft laufend die sogenannte Server-Propesse.
+Das ist das Kernstück von unserem PSIDM,
+es sei auf die Oracle-Datenbank mitbeinhaltet.
+Manchmal ist die Oracle-Datenbank auf einem eigenen Rechner,
+das haben wir hier vereinfacht dargestellt.
+Dann haben wir den Post, den PSI Print Output Service,
+das ist das, was für das Drucken zuständig ist.
+Das ist ein eigenes Stück Topware und läuft nur unter Windows,
+deswegen ist das auf einem eigenen Rechner.
+Dann haben wir natürlich die PSI WMS Client,
+das heißt die Systeme, mit denen die dann auch tatsächlich arbeiten.
+Dann gibt es natürlich Drucker und die mobilen Datenterminalen,
+die Überfluchtung mit dem System verbunden sind.
+Möglich ist auch ein Verbandssystem anzukoppeln
+und dann haben wir hier rechts außen das Postsystem.
+Hier rechts außen haben wir das Postsystem,
+das heißt das Postsystem kann mit dem PSI WMS-Kunde kommunizieren
+und auch einfach so ein System, wie ich ihn siehe.
+Hier ist noch ein Überblick über die typischen Daten,
+über so eine Schnittstelle zwischen Post und PSI WMS.
+Hin und her gehen, also vom Post gibt es den Artikelstamm,
+die Abise, PSI WMS kritisiert die Abise, wenn sie abgearbeitet worden sind.
+Gibt es eine Abendrucksmeldung, ähnlich bei den Aufträgen.
+Die Aufträge kommen vom Post zum WMS.
+Wenn die Aufträge fertig sind, gibt es eine Auftragsklickierung.
+Jede Bestandsänderung geht an den Post, damit er seine Bestandslänge anpassen kann.
+Gegebenenfalls geht auch ein zu fest festgelegten Zeiten,
+meistens einmal am Tag ein Standardgleich von PSI WMS zum Postsystem.
+Praktikel können an das Postsystem zurückgemeldet werden.
+Oder wenn wir ein Verbandsystem haben, auch an ein Verbandsystem zurückgemeldet werden.
+Und die Verladung bzw. die Sendung kann auch an den Post zurückgemeldet werden.
+So, das war jetzt ein Überblick über die Systeme und die Schnittstellen.
+Hier jetzt noch ein paar Worte zu dem Spuktest-System.
+Also Spuk steht für Softwareproduktionsumgebung.
+Und Spuktest, so heißt eben unser automatisiertes Testtool.
+Das setzt auf eine definierte Datenbank auf.
+Und es simuliert den Client, d.h. dieses Testsystem oder dieser Spuktest,
+der sendet die Telegramme an den Server, wie wenn jemand am Client irgendwelche Masken eingab.
+Genauso am MCT. Wir haben eine MCT-Signalation, mit der werden Sie auch arbeiten.
+Das zeigt die MCT-Masken an und sendet ebenfalls entsprechende Telegramme an den Server,
+so dass natürlich IVMS denkt, aha, da hat irgendjemand was gemacht.
+Und dann wird entsprechend die Reaktion von dem System erfolgen.
+Der Aufruf von dem Testtool ist so, dass man einbietet CST, Leerzeichen, Minus, Groß C, Klein B,
+dann eine Zeichenkette und dann der Name des Testfalls.
+Wir arbeiten mit dem Testtool C und dieses XXX ist ein Haltekont.
+Da kann man eine Zeichenkette eingeben.
+Und an dieser Zeichenkette hört dann dieser Testlaut auf.
+Und man kann dann manuell weiterarbeiten.
+Das werde ich jetzt gleich mal zeigen.
+So, das kommt jetzt, dass wir den Spuktest zeigen.
+Gibt es jetzt dazu irgendwelche Fragen?
+Nein.
+Gut.
+Dann zeige ich jetzt für diejenigen, die sich noch nicht in das Schulungssystem eingemeldet haben,
+erstmal nochmal ganz langsam, wie man sich in das Schulungssystem eingewählt.
+Dann kommt hier ein Log-in-Fenster.
+Und da hat die Passwörterin, da hatte ich ihn ja geschickt.
+Die haben allerdings, da müssen wir jetzt gleich drauf aufpassen.
+Das ist nicht ganz so gemacht, wie ich in der Liste, die ich ihnen geschickt habe,
+dass sie sich mit dem richtigen Schulungssystem verbinden.
+Das Passwort, und ganz wichtig, klicken sie dann hier diese an meine Anmeldung erinnern an.
+Und wenn sie sich dann hinterher wieder auslocken oder abmelden von dem Schulungssystem,
+geben sie nicht über Abmeldung, sondern machen sie einfach den Reiter zu.
+Dann brauchen sie beim nächsten Mal nicht wieder sich anmelden.
+Und dann gehen sie hier auf dieses HTMLS-Portal.
+Ok, und jetzt, die sind offensichtlich alles noch mit dem Schulungssystem verbunden.
+Ist das richtig?
+Nein.
+Und ich verbinde mich jetzt hier mit dem Schul ein.
+Ok.
+Das verbindet sich.
+Gestern hat es noch funktioniert.
+Ja, kommt, es dauert ein bisschen.
+Genau.
+Und das ist wirklich diese schwarze Oberfläche, das ist die Oberfläche von dieser virtuellen Maschine,
+auf der wir arbeiten.
+Und als erstes mache ich hier ein DOS-Fenster aus.
+Und in diesem DOS-Fenster gebe ich jetzt dieses TSC minus CW,
+und ich gebe davor mehr ein.
+Und sage dann school minus C.
+Und dann startet dieses Testprogramm.
+Am besten machen Sie das mal nicht, sondern gucken erst mal.
+Sie haben gleich eine Ausgabe, wo Sie das selber auch machen.
+Also am besten erst mal gucken und nur bei den Übungen arbeiten, bitte.
+Hier haben wir das MET.
+Das ist die MET-Simulation.
+Das ist die MET-Simulation.
+Und Sie sehen jetzt, jetzt werden Artikel angelegt, Artikel TE zuzuordnen, Abise werden angelegt,
+Aufträge werden angelegt.
+Das macht alles dieses Test-Tools, legt jetzt auch TE und Gestand an.
+Und Sie werden dann gleich sehen, dass das MET anfängt zu zackern.
+Das ist jetzt wirklich die Einlagerung bei das MET.
+Und wenn das läuft, kann ich hier, Sie sehen hier ein kleines DSi-Nut mit dem grünen Hintergrund,
+das ist das Dialog-System.
+Am besten mit Öffnen.
+Man kann auch einen Doppelklick benutzen, aber manchmal ist was hier bei diesem System mit der Geschwindigkeit von diesem System.
+Deswegen nehme ich immer das Öffnen.
+Und dann geht nach ein bisschen Zeit das PSI-WMS auf.
+Das ist jetzt ein sogenanntes Live-Screen.
+Dauert einen Augenblick.
+Und wir melden uns im PSI-WMS mit dem Benutzer TSI-Demo an und dem Passwort WMS.
+Das ist vielleicht ganz gut, wenn Sie sich das notieren.
+Das erste Mal, wenn ich starte, dauert das noch ein bisschen, aber gut.
+So, gibt es bis dahin irgendwelche Fragen?
+Okay, ich höre nichts.
+Dann ist das mal weg.
+So, das ist die Bedienoberfläche von dem PSI-WMS.
+Ich hoffe, Sie können das alle einigermaßen lesen.
+Und es gibt einen Foliensatz, der heißt auch Bedienoberfläche.
+Da steht auch alles drin, was ich jetzt erzähle.
+Ich möchte aber nicht die Folien einfach vorlesen, sondern ich teile Ihnen das am System.
+Sie haben aber die Möglichkeit, in den Folien das nachzulesen.
+Überhaupt überspringe ich manche Sachen in den Folien.
+Das ist aber auch zum Nachlesen alles da.
+Und ich fange jetzt erst mal an.
+Das ist hier die Bedienoberfläche, das Bürointerface von dem PSI-WMS.
+Wir haben hier oben eine Menützeile.
+Wir haben hier eine Symbolleiste.
+Wir haben hier den sogenannten Menübauch oder den Funktionen-Explorer.
+Und ich gehe jetzt die einzelnen Sachen mal durch.
+Wir haben hier in der Symbolleiste ein Symbol, das da heißt SQL.
+Damit kann ich die letzten 100 Datenbankabfragen ja anzeigen lassen.
+Das ist vor Fehlersuche ganz hilfreich.
+Dann haben wir hier ein Eingabefeld.
+Das ist das sogenannte Kommandosteilen-Widget.
+Da habe ich die Möglichkeit direkt einen Maskenkürzel einzugeben,
+wenn ich nicht über das Menü hier gehen möchte.
+Das zeige ich auch gleich.
+Dann haben wir hier diesen Triebumschlag.
+Damit kann ich mir die letzten 100 Telegramme, die an den Server-Daten sind,
+anzeigen, dass es auch noch Fehler sind.
+Vielleicht mal die 3-Tipps für uns in der Schule nicht relevant.
+Dann haben wir hier dieses Datenbanksymbol mit so kleinen Kringeln hier.
+Das ist Filter-Apollinier.
+Sie sehen, wir haben hier zum Beispiel eine Combo-Box,
+wo wir den Mandanten auswählen können.
+Wir arbeiten hier mit dem Tiefholtmandanten.
+Solche Informationen werden im Arbeitsspeicher gecashed.
+Wenn ich also hergehe und einen neuen Mandanten anwähle,
+dann sehe ich den hier erstmal nicht.
+Erst wenn ich hier dieses Filter aktualisieren mache,
+dann würde ich den hier sehen.
+Also dafür ist das Ding klar.
+Das ist der Tiefholtmandant.
+Das ist der Mandant, in dem wir bevorzugt jetzt arbeiten wollen.
+Und in allen Masken, in denen das Mandant ein Hilfskriterium ist,
+wird dann dieser Tiefholtmandant automatisch übernommen.
+Also das hier vorne, wo das PVI drin steht, das ist der Datenbereich.
+Hier werden die einzelnen Masken angezeigt.
+Hier unten haben wir eine Statusteile, das das Datum und die Uhrzeit.
+Das ist die letzte Systemmeldung.
+Das ist diese Systemumgebung.
+Das ist also eine Entwicklungsumgebung.
+Das ist der Benutzer, der angemeldet ist.
+Das ist der Arbeitsplatz, dem der PC aktuell zugeordnet ist.
+Ich kann also den PC, die Liste da ein bisschen auf den Arbeitsplatz zuweisen.
+Die Arbeitung des Standortes S1.
+Wir haben die Möglichkeit, die künstlerische Gehre des Standortes zu verwalten.
+Und das ist der Datenbank-Maser.
+Und der grüne da oben heißt, ja, wir sind auf dem Datenbank verbunden.
+So, wenn ich jetzt durch das Menü hier oben gehe, kann ich das Menü hier aufklicken.
+Hier über System habe ich die Möglichkeit, meinen Passwort zu ändern, die Sprache auch online zu ändern.
+Dann habe ich hier die Möglichkeit, das Menü zu konfigurieren.
+Und hier sind wieder alle Einträge von dem Menü überhaupt zu sehen.
+Das Bearbeiten-Menü ist im Moment nicht aktiv.
+Das ist erst aktiv, wenn ich hier ein Fenster geöffnet habe, eine Maske.
+Dort finden sich masken-spezifische Funktionen.
+Über Ansicht habe ich die Möglichkeit, zu anklicken, welche Elemente ich mir anzeigen lassen möchte.
+Hier kann ich den Arbeitsplatz konfigurieren.
+Da kann ich mir eine Arbeitsplatz definieren, dass ich frage, welche Masken geöffnet sein soll
+und wie die angeordnet sein soll.
+Das Menüfenster ist im Moment auch ausgetraut.
+Das ist erst dann offen, wenn ich hier tatsächlich eine Maske offen habe.
+Und mit dem Fragezeichen komme ich zu der Online-Hilfe.
+Die Online-Hilfe ist identisch mit dem Benutzerhandbuch.
+Der gleiche Inhalt.
+Hier kann ich also durch die Online-Hilfe durchblättern.
+Und kann mir auch einzelne Dialoge angucken.
+Da habe ich die entsprechende Online-Hilfe.
+Und wenn ich in einem bestimmten Dialog hier im Dialogsystem bin und dann auch erst eins für Hilfe drücke,
+dann bekomme ich auch die kontextlisste intensive Hilfe.
+Das heißt, ich bekomme genau das Kapitel aus der Online-Hilfe, die sich auf diese Maske bezieht.
+So, ich mache jetzt mal hier über...
+Also bevor ich das mache, zeige ich hier noch einmal in der Übung.
+Da habe ich die Möglichkeit hier diese Ordner auf und zu zu klappen.
+Wenn da kein Ordner-Zeichen davor ist, dann ist das eine Maske.
+Dann kann ich mit einem Doppelklick hier drauf die Maske ausmachen.
+Und ich aktualisiere.
+Und dann bekomme ich hier auch den Ladengener.
+Das ist also eine Maske.
+Oder arbeite ich dann hier oben mit dem Maskenkürze.
+Sie sehen hier, die Maske hat einen Titel und im Klammern eine Abkürzung.
+W-E-A für Waren-Eingangs-Avise.
+Art, kann man uns erkennen, ist die Abkürzung für die Artikel übernimmt.
+Mit Aktualisieren bekomme ich den Inhalt der Datenwand angezeigt.
+Und das ist eine typische Listen-Ansicht.
+Und wenn ich hier in die Details gehe, dann sehe ich auch eine Detailansicht.
+Und wenn ich jetzt hier in der Abismaske zum Beispiel bin, dann sehe ich,
+dann ist also hier das Bar-Reiten-Linien.
+Und wenn ich jetzt hier in der Abismaske zum Beispiel bin,
+dann sehe ich, dann ist also hier das Bar-Reiten-Linien offen.
+Da habe ich eine einige Funktion, wie ich hier in der Abismaske,
+für die die einzelnen Avise, ich kann eine Ladung zuordnen,
+ich kann die LKW-Anrufzeit erfassen,
+ich kann zum Photopolt arbeiten und so weiter.
+Das sind Möglichkeiten, die ich da habe.
+Und dann sind dann auch hier dieses Menü Fenster offen.
+Da zeigt es mir die einzelnen Fenster.
+Meine Lieblingsfunktion ist alle schließen.
+Da kann man wieder immer aufbauen, eine Fenster schließen.
+Das Fragezeichen hatten wir.
+Hier haben wir jetzt Filter.
+Über diesen Menüpunkt habe ich die Möglichkeit,
+den Filterbereich hier nochmal selbst zu konfigurieren.
+Sie haben vielleicht schon mal gehört von dem Click-Design,
+was wir immer sehr gerne von berichten.
+Das Click-Design ist die Möglichkeit,
+die Oberfläche von dem PNG-BMS zu personalisieren.
+Und wir haben hier die Möglichkeit, über dieses Filter-Menü,
+das Layout von dem Filter neu zu konfigurieren
+und das als Profil abzusteichern.
+Das zeige ich nachher.
+Dann haben wir hier nochmal ein G zu.
+Da können wir auch von diesem, was wir gerade ausgebildet haben,
+das ist Abis 1, in die Position wechseln,
+in die Abis-Texte oder in irgendwelche Buchungen wechseln.
+Das Gleiche hat man, wenn man hier mit der rechten Maustaste klickt.
+Und dann hat man auch hier dieses G zu-Menü.
+Hi.
+Ja.
+Ich habe eine Bitte.
+Wollen Sie diese BMS-Center zuvor machen,
+wie die gesamte Produktur war?
+Ja, das wäre schön.
+So?
+Ja, das ist schon völlig besser, ja.
+Ja, gucken wir nochmal die Artikel an.
+Also diese Abise und Artikelmaske, das sind typische Listenansichten.
+Und so eine Listenansicht hat hier oben Filterfelder,
+wo ich Filterkriterien eingeben kann.
+Und hier habe ich die Möglichkeit, eine sogenannte Inhaltsunterstützung
+oder Inhaltsassistent zu bekommen, wenn ich hier drauf klicke.
+Wenn ich hier anfange, etwas einzukippen, zum Beispiel,
+dann bekomme ich hier die sogenannte Inhaltsunterstützung
+und kann zum Beispiel hier etwas auswählen.
+Und wenn ich dann aktualisiere, bekomme ich eben nur die Artikel,
+die diesen Filterkriterien entsprechen.
+Oder aber ich fange an mit...
+9999LP1.
+Das will ich löschen.
+Und nochmal 9999LP1CZM.
+Und aktualisiere, und dann bekomme ich halt nur die zwei Artikel angezeigt.
+Hier unten, mit Control-Upsilon, kann ich diesen Filter wieder löschen,
+also Steuer- und Roll-Upsilon.
+Wenn ich aktualisiere, bekomme ich wieder alle meine Artikel.
+Und in so einer Listeansicht habe ich einmal im Tabellenkopf ein Kontextmenü.
+Da kann ich hier direkt einen Filter...
+Der Artikelgruppe ist nicht so gut.
+Also, Moment, ich mache mal hier bei der ABC-Klasse Filter.
+Da kann ich direkt hier zum Beispiel sagen, C.
+C, okay.
+Und dann wird das hier direkt gefiltert.
+Den Filter kann ich auch wieder löschen.
+Also das habe ich auch die Möglichkeit.
+Und hier habe ich die Möglichkeit, Vorbelegungen zu machen.
+Ich kann die Spalten automatisch anpassen.
+Ich kann Spalten online umbenennen, wenn mir der Titel nicht gefällt.
+Spalten fixieren, opieren, sortieren, ganz interessant.
+Konfigurieren da an sich.
+Und hier unten drucken und exportieren.
+Also ich kann die Tabelle auch unter einem CSV-Dacke exportieren.
+Und hier unten, unten die Seilinformation kann ich einblenden.
+Dann bekomme ich hier unten diese Information.
+Ich sehe, ich habe im Moment, bin ich auf der ersten Seite von 47.
+Und es gibt eine Einschränkung auf 500 Datensätze.
+Das ist bewusst gemacht, damit man in einem operativen System
+nicht aus Versehen diese ganze Datenbank auslädt.
+Sie können aber hier durchaus, wenn der Bedarf besteht,
+das aktuelle auf online ändern.
+Da ich hier nur 47 Datensätze habe, wird sich da natürlich nichts tun.
+Wenn ich in der Tabellenzeile bin, gibt es auch über die rechte Marktkarte einen Kontextminen.
+Da gibt es das Wehezunehmen.
+Wenn ich auf dem Schlüsseltext bin, zum Beispiel die Artikelnummer,
+da kann ich auch zum Beispiel in anderen Masken verzweigen.
+Zum Beispiel in die Bestandsmaske.
+Und dann bekomme ich die Bestände angezeigt an diesem Artikel.
+Dann gibt es hier oben nochmal eine ganze Reihe von Symbolen.
+Hier gehen wir einfach mal der Reihe nach ruhig.
+Das Druck einer Hardcopy des aktuellen Fensters.
+Hiermit kann ich diesen Filterbereich ausschalten bzw. einschalten.
+Wenn mir dieser Filterbereich nicht ausreicht, habe ich auch die Möglichkeit,
+einen großen Suchtdialog anzuzeigen.
+Der ist nicht besonders schön, aber der enthält alles, was man sieht.
+Also wenn dieser Filterbereich nicht das enthält, was man bucht,
+kann man also hier über diesen Filterbock und diese Suchmaske arbeiten.
+Das ist aber in der Regel nicht so sinnvoll.
+Dann habe ich die Möglichkeit hier in die Details zu springen.
+Das entspricht hier dieser Funktionstaste Detail.
+Das ist das Anlegen, das entspricht dieser Funktionstaste Anlegen.
+Dieses offene Buch, das ist das Ändern.
+Das entspricht der Funktionstaste Ändern.
+Hier mit den Feiltasten kann ich navigieren in der Tabelle.
+Dann kann ich nach ganz oben gehen, dann nach ganz oben gehen.
+Ich persönlich nutze das relativ wenig,
+weil man kann hier mit der Maus ausgerechnet gehen.
+Dann haben wir hier diese drei Räupchen.
+Da wir hier ein System haben, das mehrere Standorte verwaltet,
+haben wir die Möglichkeit hier, wenn wir das entsprechende Recht haben,
+auf einen Standort überdreifend sich zu gehen.
+Das mache ich mal.
+Da sehen wir hier mit einem freien Standort eingeblendet.
+Wir sehen, dass bestimmte Artikel an verschiedenen Standorten vorhanden sind.
+Wir haben hier den Behälter, der ist im Standort S2.
+Dann haben wir diverse Collegi, die sind im Standort Mini.
+Die meisten Artikel sind im Standort S1.
+Das ist der Standort, mit dem wir arbeiten.
+Wenn ich da nochmal aufklicke, habe ich wieder nur meinen Standort S1 hier unten angezeigt.
+Hier in der Artikelmaske gibt es noch eine Besonderheit, das sogenannte Grid Editing.
+Das heißt, wir können direkt in der Tabelle arbeiten.
+Das kann ich aktivieren, indem ich hier auf Tabelle editieren drücke.
+Und dann kann ich hier direkt was editieren.
+Dann bekommt das das Feld vom grünen Punkt.
+Und dann kann ich entweder mit dem Haken das speichern oder mit diesem Urklapphaken meine Endroh verwerfen.
+Ich kann auch eine Seile auswählen und hier mit Löschung diese Seile auflöschen.
+Diese Funktionalität ist in manchen Masken vorhanden, nicht in allen Masken, nur da wo es sinnvoll ist.
+Und hier haben wir wieder die Online-Hilfe.
+Wenn ich hier drauf klicke, sehen Sie, bekommen Sie direkt die Hilfe zum Dialog-Artikel,
+wo die Funktionen dann auch alle geschrieben sind.
+Die Abitmaske ist eine weitere Übersichtsmaske.
+Die hat nochmal eine weitere Besonderheit.
+Hier sehen Sie so einen Abstandschrank.
+Das ist das Archiv.
+Wenn ich hier auf Archiv klicke, bekomme ich hier unten ein, zwei Eingabefelder,
+wo ich die Archivierungsdatum einschränken kann.
+Und wenn ich dann auch aktualisieren würde, würde ich hier die Daten, die im Archiv sind, bekommen.
+Ich habe aber kein Archiv im Moment, keine Daten in meinem Archiv.
+Deswegen sehen wir hier nichts.
+Aber wie gesagt, mit genau dieser Maske gucken Sie, wie ist Archiv.
+Wenn Sie das wegklicken und wieder aktualisieren, gucken Sie ins operative Geschäft.
+So, das haben wir hier gemacht.
+Dann haben wir nochmal die Artikel-Details.
+Das ist eine typische Detailmaske.
+Da sehen wir hier oben bekommen wir nochmal ein zusätzliches Menü.
+Das ist Layout.
+Hier habe ich die Möglichkeit, das Layout zu konfigurieren.
+Das heißt, ich kann die Fehler, die hier angezeigt werden,
+und die Reihenfolge und so weiter, das kann ich auch alles selber nochmal unkonfigurieren,
+wenn es logisch ist, mir nicht gefällt.
+Typischerweise wird natürlich in einem Perspektivstations-Gespräch erstmal festgelegt,
+so ungefähr wie es aussehen soll.
+Aber wenn ein bestimmter Mitarbeiter für bestimmte Zwecke etwas Besonderes braucht,
+kann er sich das hier über den Buchstil dann auch speichern.
+Sie sehen, diese Detailmaske hat hier oben einen Kopfbereich.
+Und dann haben wir hier verschiedene Reiter, auf denen Informationen zu finden sind.
+Und das Ganze kann ich mit schließen, auch wieder schließen.
+Auf dem Foliensatz würde ich Ihnen hier gerne nochmal eine Sache zeigen.
+Wir haben jetzt viel mit der Maus gemacht.
+Sehen Sie die Folien?
+Ja.
+Also das sind die wichtigsten Tastaturabkürzungen, die es in dem System gibt.
+F1-Online-Hilfe habe ich gezeigt.
+Dann hier, dieses Artorialisieren ist immer F5.
+Detail ist immer F6.
+Eranlegen ist immer F7.
+Bearbeiten immer F8.
+F9 ist Löchen.
+Wenn ich so eine Detailsicht habe, kann ich mit OK die Änderungen, die ich gemacht habe, speichern
+und das Fenster schließen.
+Mit übernehmen speichere ich die Änderungen.
+Aber das Fenster hat nicht geschlossen und die Schießen haben wir gesehen.
+Und dann sind hier in rot nochmal drei, das Filterbereich öffnen und schließen.
+Das hatte ich Ihnen gezeigt.
+Dann gibt es nochmal eine Einsteuerung.
+Hier kann ich ein Gruppierungsfenster öffnen, um zum Beispiel zu kuppieren.
+Und bei Y hat ich Ihnen auch gesagt, das ist den Inhalt aller Filterfelder Löchen.
+Das ist also auch eine ganz wichtige Tastenkombination.
+So, dann haben wir nochmal, das war jetzt erstmal alles für den IVMS Client-Dialog.
+Dann haben wir ja noch die MDT.
+Hier sehen wir, welche MDT-Typen wir unterstützen.
+Wir arbeiten hier mit einem, das so aussieht.
+Das ist das MDT-PT, MDT-4.
+Das arbeitet auf ein Android oder auf EOS.
+Dann haben wir das .NET MDT.
+Das war das Vorgängermodell davon.
+Wir haben auch Java-MDTs mit Touchstream.
+Und das ist der ganz alte Standard.
+Das ist das .NET MDT gewesen.
+Aber wie gesagt, wir arbeiten hier mit diesem MDT.
+Und da sind die Masken typischerweise so aufgebaut, dass wir einmal haben einen Titel,
+einen Untertitel, dann haben wir Anzeigefelder.
+Und solche Ferienfelder, das sind Eingabefelder.
+Und dann haben wir hier Funktionsfassen, die wir bedienen können.
+Und ja, so ist so ein MDT-Master aufgebaut.
+Und das kann ich auch nochmal zeigen.
+Moment, da muss ich das IVMS gerade mal wegmachen.
+Hier ist das MDT.
+Da löcheln wir uns auch ein.
+PT-Techno.
+Da haben wir das MDT.
+Und können dann hier einfach sich draufklicken.
+Nein, ich wollte dir das nicht zeigen.
+Hier so eine Maske zeigen.
+Also hier oben sehen wir, wir machen das heißt TE3B.
+Das ist ein Transportabtrag.
+Ich könnte jetzt hier eine TE-Nummer, also eine Palettennummer, scannen.
+Und dann würde mir PT-MS anzeigen, wo die Palette so hinzutransportieren ist.
+So, das war das MDT.
+So, das war das MDT.
+Und jetzt kommt für Sie eine kleine Übung.
+Da muss ich mal gerade da rausgehen.
+Und damit es nicht zu langweilig wird für Sie.
+Moment.
+Gehen wir mal.
+Erstmal gibt es jetzt erst mal bis hierhin irgendwelche Fragen.
+Nicht. Okay.
+Es ist immer etwas schwierig, weil ich von Ihnen gar keine Rückmeldung bekomme.
+Jetzt wäre eine kleine Übung eingesagt.
+Ich mache erst mal die Liegestützplatte aus.
+Die Übungsblätter sind immer gleich aufgebaut.
+Also es gibt eine Abschnittsvorbereitung.
+Da ist unter Umständen eingetragen, was man in dieses Dotszenster eingibt,
+damit man erst einmal die Datenbahn so ausbereitet, das System so ausbereitet,
+dass Sie auch vernünftige Daten haben und auch was anzeigen können.
+Dann gibt es hier einen Abschnitt Aufgaben.
+Da gibt es die verschiedenen Aufgaben.
+Und wenn Sie nicht so genau wissen, wie Sie diese Aufgaben lösen sollten,
+dann gibt es zu jedem Punkt hier oben, zu den Punkten 1 nicht, aber zu den anderen Punkten,
+gibt es hier noch mal Detailinformationen, wie Sie das machen können.
+Also hier steht, wer dann Sie durch den Menü umdenkt.
+Das schaffen Sie auch ohne Anleitung.
+Dann verwenden Sie das Kommando-Zeiten-Begit, um den Dialog A zu öffnen.
+Und dann steht hier, dass man A in dieses Budget eingeben soll
+und dann noch enter drücken muss und so weiter.
+Also das ist die erste Übung.
+Es ist im Moment ...
+... die Übungen ...
+... die Niveau A und B werden jetzt vorgesehen.
+Also wir haben jetzt 10 Uhr nach meiner Uhr.
+Und ich würde Ihnen jetzt eine Viertelstunde Zeit geben, diese Übungen durchzuführen.
+Und wer eine Frage hat, kann sich gerne bei mir melden.
+Wir haben die Möglichkeit, dass ich mich dann auf Ihr Schuhsystem gegebenenfalls auch aufhalten kann.
+Also das heißt, Sie müssen dann rausgehen und Sie können dann auf das Schuhsystem rausgehen.
+Dann kann ich Ihnen helfen, wenn es mit den Übungen Schwierigkeiten gibt.
+Und ich habe jetzt gerade wieder festgestellt, ich hatte mich hier falsch angemeldet.
+Und wenn Sie hier rausgehen wollen aus diesem Schuhsystem, dann gehen Sie bitte hier raus mit Trennen.
+Trennen, da gehe ich jetzt kurz raus.
+Dann bekommen Sie hier eine Meldung.
+Das mache ich weg.
+Ich würde mich nochmal hier abmelden.
+Und ich muss jetzt mit einem anderen System anmelden.
+Und dann gehe ich wieder auf der Schule ein.
+So.
+Ich gehe noch für drei Minuten kurz aus dem Zimmer, bin aber sofort wieder da.
+Ich glaube, ich habe hier auch keine Bindeschritte gegeben.
+Vielleicht habe ich den Gärbel aufgenommen.
+Aber mir kommt da immer Schaden aus.
+Ich habe hier keine Bindeschritte gegeben.
+Ich habe hier keine Bindeschritte gegeben.
+Ich habe hier keine Bindeschritte gegeben.
+Ich habe hier keine Bindeschritte gegeben.
+Ich habe hier keine Bindeschritte gegeben.
+Ich habe hier keine Bindeschritte gegeben.
+Aber mir kommt da immer Schaden aus.
+Vielleicht habe ich den Gärbel aufgenommen.
+Das ist nicht immer das gleiche.
+Warte mal, ich muss den Gärbel aufnehmen.
+Das ist schuldig.
+Ich habe hier keine Bindeschritte gegeben.
+Ich habe hier keine Bindeschritte gegeben.
+Das ist mein Fußbein, wenn es zu nimmig aufbleibt.
+Okay.
+Warte mal.
+So, ich will wieder wachen, dass jemand fragen will.
+So.
+Noch etwas.
+Warte mal.
+Ich mache ab.
+Ich habe eine Melke.
+Ich muss noch einmal.
+Ich bin hier.
+Ich muss hier noch einmal.
+Ich muss hier noch einmal.
+Ich muss hier noch einmal.
+Sonst bin ich ...
+Wo war denn Schuhe?
+Wo war denn Schuhe?
+Wo war denn Schuhe?
+Ich habe nicht wartet.
+Ich habe nicht wartet.
+Es könnte mal nur einer angemeldet sein, ne?
+Ja, weil gerade hatten wir das Problem, dass wir beide mit dem gleichen Akkord angemeldet waren.
+Das ist schlecht.
+Dann schmeißt der eine den anderen normalerweise aus.
+Warte mal.
+Warte mal.
+Wie seid ihr?
+Wir waren mit dem gleichen Akkord angemeldet.
+Ja, gerade immer, wenn ich das eingehen konnte, dass der auch ...
+Ja, dann sollten Sie sich vielleicht einlegen, dass der eine den anderen einlöst.
+Ich habe ja extra eine Liste gemacht.
+Vielleicht hast du dich einfach an die Liste.
+Dann kommen Sie nicht lichtdurch gegenweite ich in die Fähre.
+Okay.
+Wenk mal Schuhe 6 an.
+Ich will mal, dass ich das nicht vertreten kann.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Also bei dieser Übung geht es nur darum, dass die sich ein bisschen verkauft haben mit der umfasslichen ...
+So.
+Mein Freund Dr.
+Dr.
+Ich glaube, das kann ich jetzt aufstehen.
+Ja, besser verknüpfen Sie sich aus dem E-Mail.
+Ja.
+Ja, das kann ich Ihnen zeigen.
+Martin und Luca, hier kommen Sie klar?
+Jetzt kommen wir hier klar.
+Jetzt kommen wir hier klar.
+Die Zukunft war leider von einer internen Vorgabe.
+Die Zukunft war leider von einer internen Vorgabe.
+Jetzt kommen wir hier klar.
+Jetzt kommen wir hier klar.
+Jetzt kommen wir hier klar.
+Jetzt kommen wir hier klar.
+Bei welcher Schule sind Sie jetzt hier?
+Bei der 5, bei der 6 und bei der 7.
+Moment, ich probiere es mal selber.
+Bei der 6, verbinden.
+Ich schätze, dass Sie da...
+wie der Weltchor sieben kann ich auch verbinden.
+Das ist kein Thema.
+Ich probiere es nochmal.
+Ich probiere es nochmal anders,
+dass ich nochmal über das Widerportal gehe.
+So.
+Also, wie halten wir noch mit Schul sechs und Schul sieben Probleme, ja?
+Ja, genau.
+Ja, dann versuche ich mich, ich leg mich hier ab
+und leg mich jetzt hier mit Schul sechs mal an.
+Schul sechs hat das Passwort.
+Das kann ich kopieren.
+Also, das geht einwandfrei.
+Ich vermute, dass Sie mit dem Passwort ein Problem haben,
+dass Sie das Passwort nicht richtig eingeben.
+Nein.
+Am besten ist es, wenn man das kopiert.
+Jetzt können Sie nicht mehr da sein.
+Dann können Sie nicht mehr, wenn Sie auf die Imipel laufen.
+Ach so.
+Das ist natürlich problematisch.
+So, dann haben wir das gleich.
+Also, ich fange da drauf als Funka Stormer.
+Also, Sie reden auch über das Userportal und so.
+Also, Sie sind diese Anmeldemaske haben bekommen.
+Ja, also, wenn Sie diese Anmeldemaske bekommen sehen
+und wenn man dann diesen Usernamen eingeben wollt
+und das Kennwort, dann kommt die Meldung,
+wenn wir auf Anmelden klicken,
+ungültiger Benutzernamen Kennwort oder Zugang verweigert
+aufgrund einer Infektion,
+dann kommt die Anmelde,
+wenn man das Usernamen Kennwort oder Zugang verweigert
+aufgrund einer internen Vorgabe.
+Und die anderen hatten alle keine Probleme.
+Ja, das ist jetzt natürlich schwierig für mich.
+Also, haben Sie auf das 006 wirklich Einfachproben
+ohne Blinks eingegeben?
+Ja.
+Ich bin ja ohne Weitere draufgekommen, ne?
+Nein, ich bin ja nach der Woche nicht draufgekommen.
+Ich bin ja nach der Woche nicht draufgekommen.
+Ich bin ja nach der Woche nicht draufgekommen.
+Und auch keine Lehrzeiten.
+Weil, wie Sie es hier so erzählen, bin ich von 41 Jahren
+noch nicht auf dem Einstieg.
+Aber ich hoffe, ich werde noch gar nicht anmelden.
+Ich werde gleich zu Ihnen unternen.
+Ich werde noch gar nicht anmelden.
+Ich hoffe, dass Sie beide freundlich sind.
+Und dass Sie zum Beispiel auf die Anmelde maskulieren können.
+Also, auf die Anmelde maskulieren können Sie?
+Also, wenn jemand Sie schon angemeldet hat, dann kann es sein,
+dass Sie da nicht draufkommen.
+Dann müssten Sie nochmal sich abmelden.
+Der Computer ist in der Schiense und kann sich selbst anmelden.
+Und ich versuche damit...
+Ich habe mich auch erst mal abgemeldet.
+Wie konzentrierend, den man sich eingegeben hat.
+Dann habe ich das da trennen gemacht.
+Und dann muss ich das nochmal mitfüllen.
+Und jetzt geht das nicht mehr.
+Ja, er macht immer das Gleiche.
+Sie haben doch jetzt meine...
+Sie gehen meinen Bildschirm ein Moment, ja?
+Ja.
+Und hier oben gibt es dieses Abmelden.
+Das gibt es bei Ihnen nicht mehr.
+Das habe ich schon nicht mehr dabei.
+Ich habe mich abgemeldet und dann bin ich zurück,
+weil wir beide auf dem gleichen Portal anscheinend irgendwie...
+Ja.
+Und die Frau Fisich hat das aufgemacht.
+Hat sich auch abgemeldet.
+Danke.
+Wir waren ja beide anscheinend über Schuhe 07 angemeldet.
+Als ich mich abgemeldet habe,
+dann ist das Wettbewerb nicht mehr direkt weggeblieben.
+Okay.
+So, und jetzt?
+Kommen wir beide nicht mehr drauf.
+Weder auf Schuhe 06 noch auf Schuhe 07.
+Richtig.
+Ich komme ohne weiteres drauf.
+Deswegen verstehe ich das nicht so ganz.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Und?
+Bis hier noch kein neuer Vergnügen.
+Komm mal.
+Also wir machen das noch einmal zusammen.
+Wir gehen ...
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Ja, ich kann das nicht mehr definieren.
+Das wird feiern. Das wird feiern.
+Das wird feiern.
+Das wird feiern.
+Das wird feiern.
+Das wird feiern.
+Das wird feiern.
+Das wird feiern.
+Das wird feiern.
+Das wird feiern.
+Das wird feiern.
+Das wird feiern.
+Das wird feiern.
+Das wird feiern.
+Das wird feiern.
+Das wird feiern.
+Das wird feiern.
+Das wird feiern.
+Das wird feiern.
+Ja, ich kann das nicht mehr definieren.
+Das wird feiern.
+Das wird feiern.
+Das wird feiern.
+Das wird feiern.
+Das wird feiern.
+Das wird feiern.
+Das wird feiern.
+Das wird feiern.
+Das wird feiern.
+Das wird feiern.
+Das wird feiern.
+Das wird feiern.
+Das wird feiern.
+Das wird feiern.
+Das wird feiern.
+2014 Großkriegs Assistenten Jean-Francois Boeot
+Lafayette
+Ärztin
+Ok, dann können Sie mir die Übungen beginnen. Dann machen wir noch einmal den Halt.
+Ich denke, die 10 Minuten reichen Ihnen für die Übungen.
+Es war ja abzusehen, dass es nicht so ganz reibungslos gehen würde mit den Übungen.
+Und wir hatten noch Zeit.
+Geht auf der Bündnis?
+Ja.
+Weiß ich nicht.
+Ich glaube nicht.
+Können Sie mir die Übungen beginnen?
+Ja.
+Rote Seite?
+Ja.
+Eine blöde Frage.
+Wer bei der DOS-Anmeldung bzw. im DOS-Fenster den Bindesteg erfasst,
+und wann ist das ein Unterschied, ob man jetzt über Explorer oder Firefox arbeitet?
+Gibt es da eine Vorgabe, weil irgendwie erscheint jemand ein scharfes Essen?
+Dann stimmt das mit der Tastatur nicht.
+Ja, das haben wir uns natürlich auch gerade schon gefragt.
+Aber jetzt der Kollege bei Firefox, das kann nur sagen, die ist ganz normal.
+Also ich arbeite immer mit dem kleinen Fox, deswegen muss ich mal überlegen, da war da was.
+Probier mal das HBS.
+Also wenn beim Bindesteg nicht HBS kommt, dann hast du bei der DOS-Tastatur rausgekommen.
+Du musst mal andere Sonderzeichen probieren, bis der Bindesteg rauskommt.
+Es gibt bislang auch irgendwo die Möglichkeit.
+In der Leiche neben dem Firefox.
+Hier, schauen Sie mal.
+Schauen Sie auf meinen Bildschirm.
+Wenn Sie hier oben in die Titelleiste gehen, da gibt es ja Keyboard.
+Und da gibt es auch Keyboard layout.
+Vielleicht ist es da bei Ihnen unbestellt.
+Gut, das war es dann.
+Also diese Eingabe, die DOS-Tänzer, die die Hula-Hula, das sind halt Daten in der Systemreinladung und wir haben sie.
+Schauen wir mal.
+Was sind das eigentlich?
+Die Doppelkontakt.
+Die Doppelkontakt.
+Komm mal, komm mal.
+Das ist alles der Befehl.
+Also der Befehl ist TSP.
+Mehrzeichen.
+Minusgruß C.
+Dann 3B.
+Dann ein Mehrzeichen.
+Dann das Wort mehr.
+Und dann ein Mehrzeichen und dann diese Schuhe.
+Okay.
+Okay, alles geschafft jetzt.
+Okay.
+Das besteht aus der Schuhe.
+Das ist jetzt in Ordnung.
+Dann wir gehen zum nächsten Video.
+Ja, alles klar.
+Gut.
+Okay.
+Okay.
+Okay.
+Okay.
+Das ist jetzt in Ordnung.
+Endlich.
+Okay.
+Okay.
+Ich habe nochmal eine Frage.
+Ja?
+Die Maskenkürze.
+Werden die da grundsätzlich nicht mit angezeigt?
+Oder kann man das dort mit anbinden lassen hinter den Funktionen?
+Standardmäßig werden die da nicht angezeigt.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Also, es ist so, dass wenn man ein paar Tage mit dem System gearbeitet hat, dann hat man die Maskenkürze von dem Maskenkram auf.
+Also, es ist so, dass wenn man ein paar Tage mit dem System gearbeitet hat, dann hat man die Maskenkärze von dem Maskenkram auf.
+Okay.
+Für mich wäre es eine FAP, habe ich mir sagen lassen, wo die Maschennamen, also wirklich ganz merkwürdige,
+das sind völlig nicht sprechende T7, das sind zwölf oder sowas, da lernen die Leute auch ihre Maschen auswendig,
+also das sieht das schnell. Aber prinzipiell wäre es auch möglich, hier das anzeigen zu lassen.
+Also alles, was ich als Hex auf der Oberfläche sehe, sind so als sogenannte Sprachliste hinterlegt.
+Und die können dann abgleich zu jedem Element auf der Oberfläche eine Übersetzung machen.
+Ich mache das nicht. Aber wenn Sie hier zum Beispiel bei Abisstatus, wenn ich jetzt hier hingehe,
+da gibt es Umbenennen. Und Sie sehen, intern heißt das Ding ja FSA Stap und Label und auf Deutsch
+heißt es Abisstatus, auf Englisch heißt es das, auf Russisch und Cornish heißt es das gleiche wie in Englisch.
+Und da könnte ich jetzt auch hergehen und das auch ändern. Dann ist es aber nicht nur der Datenband geändert,
+wenn die Sprachliste nochmal neu reingeladen werden würde, würde es noch mal überschrieben werden,
+aber es gibt auf jeden Fall die Möglichkeit.
+Ist irgendwas passiert?
+Ja, nur ein Knie gestoßen.
+Ich glaube, dass wir im ersten Mal Sie angegriffen haben.
+Nee, ich verwirr mich.
+Okay. Wie steht es mit den Übungen?
+Also ich bin so weit durch.
+Sind alle so weit durch und braucht, nein, ich frage alle, wer braucht noch Zeit, bitte melden.
+Ich bin gespannt.
+Gut.
+Oh, ich habe ein ganz kleines Problem.
+Ja?
+Bei mir ist alles voll klein.
+Was ist bei Ihnen?
+Alles voll klein.
+Klein?
+Mhm.
+Okay.
+Okay.
+Sie sind in der Schule 6 oder 7?
+Lass dich mal angucken.
+5.
+Okay, dann gucke ich mal.
+Ich weiß nicht, ob ich die jetzt rausmeite, wenn ich auf der Schule 5 gehe, aber ich gehe mal auf die Schule 5 und gucke,
+ob ich mich damit verbinden kann, dass ich mir das mal anschauen kann.
+Da komme ich nicht raus.
+Macht einer was?
+Das wird mir nirgends.
+Das geht. Also können Sie sich auf dem Schule 5 dann vielleicht ausbegeben mit Trennen?
+Ja.
+Hier unten dann mit Trennen?
+Mhm.
+Also rausgehen?
+Ja, habe ich gemacht.
+Ich werde jetzt noch einmal, dass ich da auf die Schule 5 komme.
+Wie bitte?
+Lass mich mal angucken.
+Ja, lass dich mal angucken.
+Ja.
+Und hier unten mit dem einen drauf.
+Dann muss ich aber zurückkommen.
+Ja, dann kann ich mich mal angucken.
+So, so, so.
+Ja, dann kann ich mich mal angucken.
+Ja, dann kann ich mich mal angucken.
+So, dann kann ich mich mal angucken.
+Ich kriege da eine Verbindung zu den Schulen 5.
+Dann mache ich es anders.
+Ich melde mich hier ab.
+Ich habe so das Gefühl, dass wir grundsätzlich ein Problem im Moment haben.
+Der Körper reagiert gar nicht.
+Was heißt das?
+Der Körper reagiert gar nicht.
+Das ist ein Problem im Moment.
+Das ist ein Problem im Moment.
+Das ist ein Problem im Moment.
+Das ist ein Problem im Moment.
+Das ist ein Problem im Moment.
+Das ist ein Problem im Moment.
+Wenn die anderen arbeiten, dann ist das nur bei mir.
+Hier bin ich drin.
+Das Meeting läuft ja auch, also insofern habe ich ja Internet.
+Habe ich ja Internet, guck mal.
+Was? Kann ich mich damit verdrücken, Herr?
+Da habe ich jetzt ein Problem.
+Ich fahre mal den Firefox nochmal rein.
+Ich fahre mal den Firefox nochmal rein.
+Ich fahre mal den Firefox nochmal rein.
+Also die rr.psicloud kann ich auch nicht öffnen, das zeigt ja bei mir auch, dass keine
+Kaffeeprobleme haben.
+Ich gehe mal da Raum aus, weil das ist wahrscheinlich so.
+Jetzt versuchen wir das nochmal.
+Weil das nicht funktioniert, dann muss ich die Infrastruktur anrufen.
+Leute, ich würde sagen, machen Sie mal ein bisschen Pause, wie ein Kaffee.
+Ich muss versuchen, mit unserer Infrastruktur zu reden, was das Problem ist.
+Habt ihr das schon mal gut gemacht?
+Ja.
+Ich verstehe gar nicht, dass das Meeting auch läuft.
+Also ich versuche mal die Infrastruktur zu erreichen.
+Okay.
+Hallo Martin, hier ist Romana. Du, ich bin ja hier in der Webex-Schulung.
+Und wir haben ja das Problem, dass wir auf diese TTI-Klau nicht mehr draufkommen.
+Ja, ich bin im Büro, aber die Kollegen von Elton kommen da auch nicht drauf.
+Also es ging und jetzt auf einmal gibt es nicht mehr.
+Haben wir noch ein paar Minuten?
+Ja.
+Und jetzt werfen wir eine raschige Hilfe von Elton.
+Hier ist die Verbindung für den Server.
+Ich glaube, die hier auch.
+Jetzt geht es.
+Ich weiß nicht, was das ist.
+Zwischendurch war jetzt von mir dran.
+Okay, danke dir Martin.
+Okay, danke schön. Tschüss.
+Hallo Martin, einer da?
+Ja.
+Also es geht wieder. Warum auch immer? Der Kollege von der Infrastruktur guckt nochmal nach,
+dass er den Fehler findet, dass es nicht nochmal passiert.
+Ich wollte bei der Frau Henning war das.
+Ja.
+Dann gucke ich jetzt, das habe ich nicht mit dem Telefon 5.
+Und ich frage mich, warum das so klein ist.
+Ohje, das ist ja wirklich furchtbar.
+Ja, ist ein bisschen klein.
+Ja, mal gucken, ob man hier über die Anteilereinstellungen.
+Das war's.
+Na ja.
+Hier haben wir ein Profil an.
+Okay, danke schön.
+Ich glaube, das wird jetzt größer werden als das Profil, aber das müssen wir erstmal aufwarten.
+Da war halt auch nicht so eine benutzerdefinierte Skalierung drin.
+Aber dass das nicht mit der OPC zusammenhängt, das ist immer so eine Sache mit der Auflesung.
+Aber ich habe jetzt was geändert, das lasse ich nochmal laufen.
+Das ist das normale.
+Ja.
+Ja.
+Ja.
+Ja.
+Ja.
+Ja.
+Ja.
+Ja.
+Ja.
+Ja.
+Ja.
+Ja.
+Ja.
+Ja.
+Ja.
+Ja.
+Okay.
+Ich denke, das müsste jetzt größer sein.
+Ja, das ist doch besser, oder?
+Ja.
+So, ich gehe jetzt wieder raus, ich trenne mich hier von dem System.
+Und ich melde mich wieder als Schul 5 an, bitte.
+Ja.
+Ich melde mich wieder als Schul 1.
+Und ich hoffe, dass bei Ihnen jetzt groß bleibt.
+Ja, okay.
+Aber das Problem, dass das ganze Fenster klein bleibt und ich keinen Fullscreen habe.
+Aber da können Sie doch aufstehen, oder?
+Ja, aber das geht nicht.
+Ich würde Ihnen das gerne zeigen, wenn Sie sehen.
+Ja, das ist leider etwas schwierig jetzt.
+Also, Sie können das WMS nicht vollziehen lassen oder überhaupt das Schul 5-Screen nicht?
+Genau, ich habe ja ein ganzes Fenster.
+Aber nur ein Teil davon, bei groß schalten, der komplette Desktop ist klein.
+Ja.
+Und da können Sie nicht da oben...
+Sie haben dieses Desktop aber in klein.
+Ja.
+Und da oben...
+Also, wenn Sie ein neues Profil anlegen, kommt immer dieses Top-Up, da geben Sie einen Namen
+für das Profil und klicken, wenn das ein benutzer-spezifisches Profil sein soll.
+Machen Sie hier nach und rein, Sie können es auch mal ganz-spezifisch oder arbeitsplatzspezifisch
+machen und wenn Sie hier bei Standardprofil eine Markung setzen, dann heißt es, dass es für diesen
+Benutzer ein Standardprofil ist, das heißt, es wird immer ausgeblendet, wenn der Benutzer die
+entsprechende Maske dann aufmacht und diese Profil-Einstellung wird in der Datenbank gespeichert.
+Und das können wir uns jetzt angucken. Ich mache jetzt die Partikelmaske auf.
+Und jetzt will ich hier in dem Filterbereich ein zusätzliches Fett einfügen und da kann
+ich hier auf Filter gehen, Layout, das mal neu, erst mal Namen vergeben,
+da D und ich sage, das ist ein nutzer-spezifisches Profil und dann geht es hier um zu zeigen,
+wie ich das Layout konfiguriere und dann komme ich hier in so einen Designmodus und da sehen Sie,
+dass Sie hier verschiedene Elemente haben und wenn ich da aufklicke, habe ich die Möglichkeit,
+mit einem Zuszeichen hier weitere Elemente hinzuzufügen oder ein Element wieder zu löschen.
+Hier rechts sehen Sie die Felder, die Sie verwenden können, die Sie raus sind, sind die,
+die schon genutzt worden sind und hier unten sehen Sie noch mal andere Komponente, die Sie
+reintüten können, also das ist alles in der Art Schweißenlobi mal, das ist ganz einfach.
+Wir rufen hier oben nach dem Feldland, das Feldland ist da und das packen wir einfach hier hin
+und sagen OK und dann sehen wir, haben wir das Feldland da und wir dürfen nicht vergessen,
+das Layout auch zu speichern und wenn ich die Maske zumache und die Maske als ich sie da aufmache,
+dann ist das Feldland weg und wenn ich aber hier über Filterlayout laden reingehe,
+OK, da haben wir auch ein Filterlayout, da haben wir auch eine gemacht, da haben wir eine Auffahrt,
+da können wir das Land abschieben. Also so kann man in den Filterbereich ein neues Feld reinbringen
+oder aber wenn wir da oben jetzt ein neues Filterreferentum haben, dann wollen wir das hier unten in der Tabelle
+aufsehen, dann gehen wir hier über Ansichtsprofile neu aufwieder, machen das mal einmal zu Standardprofil
+und dann sagen wir konfigurieren Ansicht und hier kann ich über den Spaltennamen sortieren,
+das sind die Spalten, die schon zugeordnet sind und das sind die ganzen Spalten, die ich noch
+zusätzlich verwenden kann und ich kann entweder nach Spaltennamen oder nach Datenbandnamen sortieren
+und da kann ich hier das Land finden und das schiebe ich jetzt da rüber, da ist das Land jetzt ganz unten
+und ich mache das jetzt nach ganz oben und sage OK und da habe ich jetzt die Spaltenland
+und jetzt konfiguriere ich da, dann gehe ich ins Ansichtsprofil speichern und wenn ich die Maske zumache
+und nochmal aufmache, dann sehen wir, dass das Feldland, die Spaltenland da ist, weil ich gesagt habe,
+dass dieses Profil ein Standardprofil für mich ist, immer wenn ich das aufmache, bekomme ich auch diese
+entsprechende Einstellung. Ja und jetzt ist die Übung Grundlage C angesagt, die einige von Ihnen schon
+gemacht haben, die dann genau das nochmal nachmacht, was ich eben gezeigt habe, einmal im Filterbereich
+ein neues Feld reinbringen und einmal in der nächsten Ansicht ein neues Feld reinbringen.
+Wir können aber auch noch vorher eine kurze Pause einlegen, wenn Sie möchten.
+Das sieht jetzt aus, Pause oder Übung?
+Übung.
+OK, dann machen Sie die Übung, ich würde sagen bis heute nach 11 und dann machen wir weiter.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+OK.
+LPC steht bei uns immer für Lagerpalette. Wir haben innerhalb des LP-1 einen Kommissionierbereich.
+Das sind die unteren Ebenen in dem LP-1. Da haben wir Überkappplätze, da haben wir einen
+Versichtungsplatz. Dann haben wir ein automatisches Kleinteilerlager, ein automatisches Palettenlager,
+ein Fachbodenlager, ein Krak-Anlager, ein Blocklager. Passend zu den Lagerplätzen gibt es auch
+Kommissionierplätze, Ware zum Mann, Kommissionierung für das automatische Kleinteilerlager,
+Kommissionierung für das automatische Palettenlager, manche Warekommissionierung. Und dann haben
+wir hier die Auftragzusammenführung. Da werden die ganzen Bestände, die aus den verschiedenen
+Lagerbereichen für einen Auftrag zusammengesammelt worden sind, erstmal abgelegt. Von dort gehen
+sie zu packen. Die verpackten Packstücke kommen in den Versatzbereich. Und an den Versatzbereich
+werden dann direkt die Bände auf das Tor gebucht. Und zwar auf das Tor, das zu einer
+entsprechenden Tour gehört, zu der der Auftrag zugeordnet ist. Dann haben wir hier oben noch
+den Tipps-Kontrollbereich. Dann haben wir einen Klärungsplatz hier unten. Und hier oben haben wir
+noch eine Besonderheit, das ist der Bereich Uwe, so unterwegs. Wenn wir duzent aus einer
+Produktion bekommen, dann ist das oft so, dass die uns von TE genau abonniert werden. Das heißt,
+wir bekommen die Information. Wir bekommen 100 Stück, Artikel 47.11, auf TE123. Und sobald wir
+aber eine TE bei uns im System haben, muss die auf einen Platz gebucht werden. Diese TE, die aber
+aus der Produktion kommt, die ist dann noch nicht wirklich im Lager. Und deswegen wird die auf diesen
+Unterwegsplatz gebucht. Und sobald die Zugangsverarbeitung erfolgt ist, die Badevereinnahmung
+erfolgt, ist dann die TE auf diesen einen Platz gebucht.
+Hier sehen wir nochmal, wie die Standards, wie die Platznamen ausgebaut sind. Also wir benutzen
+in der Regel drei Stellen für den Lagerbereich. Es kann aber auch 5-5-stellig sein. Wir haben die
+Teilbereiche, die werden normalerweise einfach durchnummeriert. Wir haben drei Stellen für eine
+X-Koordinate, zwei Stellen für eine Y-Koordinate. Wir haben auch noch eine Z-Koordinate und eine
+Weite für automatische Kleinteilelager. Und dann wird dann noch ein Lagerplatzkod, da haben wir
+bestimmte Alkoholrhythmusgebüchen gebildet. Der kann, wenn der Platzname gescannt oder die
+Platznummer, den hat er gesagt, gescannt werden soll und das Scannen nicht möglich ist, dann kann
+eigentlich dieser Platzkod eingegeben werden.
+Der Platz hat diverse Eigenschaften. Einmal die Koordinaten, dann die Zuordnungs- und Teilbereiche
+im Bereich. Das haben wir gesehen. Der Platztyp ist eher philosophisch zu sehen. Wir haben früher
+über den Platztyp manche Sachen gesteuert. Das machen wir jetzt über Platzfunktion. Aber der
+Platztyp gibt an, ist es ein Lagerplatz, ist es ein Einlangsplatz, ist es ein Funktionierplatz.
+Dann haben wir die Platzklassen. Die gibt an, ist es ein Palettenplatz, ist es ein Blockplatz, ist es ein
+Fachbodenplatz. Dann hat der Platz eine Kapazität. Blockplätze haben typischerweise eine Kapazität
+größer ein. Paletten, Lagerplätze haben in der Regel eine Kapazität von eins. Dann haben wir die
+Abmessungen des Platzes, die gepflegt werden müssen, weil die werden natürlich auch mit den
+Abmessungen der CE, die einzulagern sind, abweglichen, sodass wir nicht eine CE, die zu groß ist, auf einen
+Platz versuchen zu bringen, der zu klein ist. Dann haben wir noch die ABC-Sortierung des Platzes.
+Da komme ich gleich nochmal zu. Dann kann der Platz zu einem Einlagerbereich zubeordnet sein. Wir haben
+eine Entlangsortierung für die Kommissioniere, für die Inventur. Dann kann der Platz ganz frei oder
+gestärkt sein. Lassen wir nochmal einen Blick auf die ABC-Sortierung. Also wir haben im IMF keine
+statische Einteilung des Lagers oder der Lagerbereiche in A, B oder C. Wollen wir vergeben für jede
+Platte eine Sortiernummer. Und Sie sehen hier in der Folie diese Sortiernummer für die A-Klassifizierung.
+Das ist die linke oben. Das hier ist der beste A-Platz. Das ist der zweitbeste, der drittbeste, der
+viertbeste, das fünf, sechs. Also das sind alles gute, gute A-Plätze. Und dann haben wir eine zweite
+Nummer für die B-Klassifizierung. Die fängt hier oben an. Das ist der beste D-Platz. Das gibt es von
+da. Dann gibt es wieder hier unten. Soll einfach dazu gehen, das zu illustrieren, dass wir für jede
+Klasse eine eigene Sortiernummer haben. Und dadurch kann das Lager im Prinzip atmen. Also wir sagen
+auch zwar, dass was gelb ist, ist im Prinzip die A-Zone. Aber wenn alle A-Plätze oder alle guten A-Plätze
+belegt sind, wenn wir also mehr als 14 CE haben, die wir hier eingabe, dann können wir hier auch die
+15 und die 16 noch ausweichen. Das sind zwar nicht mehr so gute A-Plätze, aber die können wir auf jeden Fall
+nehmen, sofern wir nicht schon irgendwie an dieser B-Artikel draufstehen. Und so haben wir eben eine
+dynamische A-B-C-G-Sortiezuordnung und können da sehr viel flexibler arbeiten, als wenn das eine starre
+Bordierung wäre. Ja, wir haben innerhalb unseres Lagers natürlich neben den Lagerplätzen sogenannte
+Funktionsplätze. Die halten typischerweise so. Also das kann sein, dass die das bei sich im Lager
+irgendwie alles anders nennen wollen. Wir versuchen aber möglichst standardnah die Plätze
+vergleich heißen zu lassen, weil das Ganze die Wartungsgruppe einfacher ist. Also Waren-Eingangsplätze
+fallen typischerweise mit ein an. Kommissionierplätze mit KWM oder KMB, je nachdem, was es bei einer ist.
+Fachplätze, Auftragszusammenführung, das sind die sogenannten Fachbahnen. Dann die Verbandplätze, das sind
+typischerweise Blockplätze. Dann die einzelnen Tore, also jedes Tor ist ein einziger Platz.
+Dann haben wir für den Klärungsplatz haben wir drei Plätze. Einmal haben wir den sogenannten virtuellen
+Klärplatz, das ist der mit den ganzen Nullen drin. Das ist ein Platz, den es physisch nicht gibt.
+Auf diesem Platz bucht man PE, von dem man dem System fragt, dass man die nicht finden kann.
+Also nehmen wir an, ein Fachplattform fordert einen Mitarbeiter auf, zu einem bestimmten Platz zu gehen
+und eine bestimmte PE zu holen. Und er sagt dem System, die PE ist nicht da. Gut, dann ist die physisch tatsächlich
+nicht da. Es weiß in dem Augenblick keiner, wo sie ist. Sie wird dann auf diesen virtuellen X-Platz gebucht,
+weil eine PE muss auf jeden Fall erhoben sein. Dann haben wir den XXX01, das ist der eigentliche Klärungsplatz.
+Auch ein Blockplatz in der Regel hat auch meistens unendliche Kapazität.
+Da kann man PE hinbringen, wirklich physisch hinbringen und auf diesen Platz buchen, wenn es Probleme damit gibt.
+Und dann gibt es noch den AP-Platz, den Ausgangsklärplatz, den Überlageplatz.
+Was auch immer zu regeln war, was ich immer zu klären hatte, dann kann ich die PE auf diesen AP-Platz buchen
+und von dort aus wird sie dann auch eingeladen. Auch die Fahrzeuge haben bei uns, sind bei uns Plätze.
+Also wenn eine PE von einem Fahrzeug aufgenommen worden ist, dann ist die PE auch tatsächlich auf dem Fahrzeug gekommen.
+Entschuldigung. Und dann haben wir Plätze, die haben in der Mitte das ET oder das AP, so wie wir das hier oben gesehen haben.
+Das sind Überlageplätze, einmal für die Einsagerungen, einmal für die Auflagungen. Das ist ein Beispiel.
+Dann haben wir intern verwendete Plätze. Das sind diese eher Heuloplätze. Das sind Plätze, wo ganz viele Nullen immer nur aufgeschüßt sind.
+Das sind Plätze, die wir verwenden, wo wir für einen Transportauftrag anlegen müssen, aber noch nicht wissen, das endgültige Endziel ist.
+Zum Beispiel, wenn eine Transporteinheit am Transportplatz angekommen ist, bekommt sie immer einen Transportauftrag zum Tor.
+Zu dem Zeitpunkt, wo die Transporteinheit in den Verband reingekommen ist, wissen wir noch nicht, an welchem Tor sie verladen wird.
+Deswegen wird der Transportauftrag auf diesen Platz erst mal gesetzt. Und erst wenn wir das Tor wissen, wird dann das Endziel von dem Transportauftrag geändert, zu dem richtigen Tor.
+Das ist so ein Beispiel für die Verwendung von diesen Zäugungsplätzen.
+Die Plätze können logisch zusammengefasst werden. Wir können Einlagerbereiche, Bereifstellbereiche, Nachschubbereiche, Bewegungsteilbereiche und Bewegungsbereiche haben.
+Das ist ganz wichtig, weil die Bewegungsbereiche werden den jeweiligen Fahrzeugen zuordnen.
+Bei einem Fahrzeug ist genau ein Bewegungsbereich zugeordnet. Und das bestimmt, wo sich dieses Fahrzeug bewegen darf.
+Und der Bewegungsbereich wird sich auf verschiedene Bewegungsteilbereiche zusammenfassen.
+So, und jetzt gucken wir uns die Topologie an.
+Die Topologie befindet sich hier. Und wir gucken uns zum einen die Bereiche an.
+Und hier sehen wir die gesamten Lagerbereiche, die wir hier haben.
+Diese Auskammer, das ist die Zone, wo wir ständig nicht mehr am Lager sind.
+Wir haben einen Cross-Packing-Bereich. Wir haben einen Bereich fürs Drucken, wenn bestimmte Druckvorgänge passieren sollen.
+Das wichtigste sind die wahren Eingang. Wir haben die Vorverstörungen für Gründung, Fördertechnik, Fahrzeug, dann die Kommissionierplätze,
+dann hier diese ganzen Lagerplätze, Packplätze, Auftragszusammenführung und den X-Platz.
+Hier sehen Sie, wie viele Plätze jeweils da sind. Wenn die Plätze am Anfang ordentlich sind, dann haben wir hier keine Platzangabe,
+keine freie Kapazität. Hier hat man also so ein bisschen so einen Überblick, über wie ist mein Lager höchst.
+Und wir sehen hier, unser Lager, unser Spiellager hier ist relativ leer. Da sind also fast überall 100% frei.
+Hier würden wir sehen, ob welche Sperre vorliegen, ein Lager oder ein Auslagersperre.
+Hier ist festgelegt, wie der Platznamen zusammengesetzt wird. Zweimal Bereichnamen, zweimal Teilbereichnamen, dreimal X, zweimal Y.
+Und die platzte Zeichnung, das ist das, was angesteigt wird. Das wird mit Bindestrichen angezeigt, damit man das besser erkennen kann.
+Dann haben wir den Bereich Typ. Ich erkläre uns, dass für den jeweiligen Bereich zu verwenden ist.
+Das heißt, wir sehen daran, dass wir auch die Möglichkeit haben, für verschiedene Lagerbereiche auch verschiedene Plätze anzulegen.
+Hier in unserem Standardsystem haben wir halt nur den einen Platz.
+Wenn ich mir jetzt hier einen Lagerbereich aussuche und dann in die Teilbereiche wechsle, bekomme ich eine neue Maske.
+Da sehen wir hier für das Palettenlager 1, haben wir hier verschiedene Regale. Die verschiedenen Regale gehören zu den unterschiedlichen Plätzen.
+Und hier sehen wir an den Teilbereichen, dass jedes Regal ein Teilbereich ist.
+Dann haben wir hier, wie möglich, die Anzeige, ob gesperrt ist.
+Wir haben einen Versichtungsplatz für den Teilbereich, den gibt es in jedem jeweiligen Teilbereich. Das ist in diesem Fall auch der X-Platz.
+Und ich habe auch die Möglichkeit, jetzt hier einen Teilbereich zu sperren.
+Und zwar gibt es da unterschiedliche Sperrmöglichkeiten, eine Kurzzeit-Sperre, eine dispositive Sperre und eine Langzeit-Sperre.
+Also dispositiv und Langzeit haben eigentlich eher die gleichen Auswirkungen.
+In dem Fall, wo die Bereiche Langzeit gesperrt werden, dann werden die Transportauffräge entweder storniert oder nicht in diesem Lagerbereich erst angestellt.
+Angelegt bei einer Kurzzeit-Sperre gehen die Transportauffräge einfach insortiert und werden dann wieder aktiviert, wenn die Sperre aufgehoben ist.
+Ich kann dann auch noch einen Grund eingeben und ich kann auch noch eine Auslage machen, z.B. eine Langeausgabe, Auslager-Sperre.
+Und dann sehen wir hier, dass das hier auch entsprechend eingeschaltet wird.
+Und die Aufhebung der Sperre ist genau so, das mache ich einfach wieder auf.
+Und damit ist das nicht gesperrt.
+Von den Teilbereichen, also diese Maschen gibt es jetzt nicht wirklich viel her, von den Teilbereichen kann ich zu den Plätzen gehen.
+Das heißt, ich suche jetzt vom Bereich LC1 im Teilbereich 01, suche ich jetzt halt alle Plätze, die sortiere ich mal.
+Wir sehen hier die Plätze.
+Das ist im Teilbereich 1 der erste X-Platz, der erste Öffnung-Platz, also der allererste Platz.
+Der hat einen Lagerplatzcode, hier ist nur noch der Bereich, Lager 1.
+Dann haben wir den Teilbereich, die X, Y, Z-Koordinaten.
+Die Seite ist erstmal, Seite und Pech ist erstmal Leer-Inhalationlager.
+Dann haben wir hier die freie Kapazität, hier sehen wir haben wir eine Kapazität von 0, also diese Plätze sind belegt.
+Die maximale Kapazität ist überall 1.
+Die Platzklasse ist Teil, das heißt es ist ein Palettenplatz. Der Platztyp ist ein Lagerplatz.
+Das ist ein Lagerplatz, das sind die Einlager- und Auslager-Sperren.
+Ich kann auch Plätze einzeln sperren und ich kann zum Beispiel diese Platten aufsperren.
+Ich kann zum Beispiel eine Einlager-Sperre machen, dann bekomme ich hier ein Häkchen.
+Dann haben wir hier hinten, hier hinten die Platz-A, B und C-Klasse und hier sehen Sie die A-, B- und C-Sortierung der Plätze.
+Wenn ich jetzt hier mal drauf klicke.
+Also Sie sehen von der A-Sortierung, das ist also so ein gut und schlechter A-Platz ist das nicht.
+Das ist also Radler 45. Die B-Sortierung hat 199, C 388 und D 613.
+Das heißt die A-Sortierung ist die kleinste Sortierung, deswegen wird die Platz-A, B, C-Klasse erstmal auf A gesetzt.
+Und so sehen Sie, also wie jeder Platz hier eine eigene Sortier-Nummer hat und hier unten die Plätze, zum Beispiel dieser Platz hier,
+der hat eine sehr gute B-Sortier-Nummer und eine schlechte A-Sortier-Nummer, also der ist schon wieder eher ein besserer B.
+Und alles was dann da weiter rechts drauf kommt, die Ersammelsortierung ist nicht konfiguriert, deswegen steht hier überall eine 9999.
+Ja, das haben wir bereits schon bereits nachgebracht. Das ist alles nicht mehr so interessant.
+Das ist erstmal das zu der Topologie, also wir haben jetzt die Bereiche, die Teilbereiche und die Plätze.
+Und jetzt geht es weiter mit den Transporteinheiten.
+Die Transporteinheit, das ist die Einheit, um Bestände zu ladern oder zu transportieren.
+Die hat eine einfache Nummer, wobei ich für die verschiedenen CE-Typen unterschiedliche Nummerkreise auch definieren kann.
+Also die CE hat demnach natürlich auch einen definierten CE-Typ, die ist entweder eine Palette oder eine Gitterbox oder eine Schelterkiste oder eine Industriepalette
+oder eine große Europalette oder was auch immer, das wäre der CE-Typ.
+Dann hat sie ihre Abmessung, ihre Tragfähigkeit, das wird alles geprüft, wenn man Vereinnahmung macht, wenn man Transporte macht.
+Und ein CE-Typ kann ein oder mehreren Artikeln zugeordnet sein und dadurch bestimme ich, auf welchen CE-Typen ich dieser Artikel transportieren darf.
+Und so eine CE kann, wie gesagt, leer sein, Bestände tragen, andere CE tragen und auch transportiert werden.
+Hier ist nochmal ein Übersichtsbild, damit man sich da vielleicht etwas besser klar machen kann.
+Wir haben hier in der Mittelpunkt die Mitte, die CE. Die CE ist ein bestimmter Typ und der Typ hat einen Nummerkreis.
+Damit kann ich die CE unter Umständen etwas unterscheiden, wenn ich möchte.
+Der CE-Typ kann einem anderen CE-Typ zugeordnet und dadurch definiere ich, welcher CE-Typ, auf welchen CE-Typ überhaupt gelagert werden kann.
+Ich kann definieren, dass ich einen Gehälter aus einem Euro aufsetzen kann, aber ich würde nicht definieren, dass ich nur Euro aus dem Gehälter aufsetzen kann.
+Dann habe ich die CE-Typ zur Artikelzuordnung. Das heißt, dadurch, mit welchen CE-Typen dieser Artikel gelagert werden kann.
+Zu einer CE kann ich auch CE-Texte erfassen, zum Beispiel auch Bildchen erfassen, wenn wir im Waren einladen, zum Beispiel Städigankommen oder sowas.
+Auf der CE kann ein Stand liegen. Die CE steht immer auf einem Platz.
+Es kann eine andere CE draufstehen oder eine andere CE auf dieser CE aufliegen. Es kann sich in Transkortaufgabe auf diese CE beziehen.
+Eine Avizposition könnte diese CE avisieren oder eine Auftragsposition könnte auch CE genau abrufen. Ist eher nicht der Fall, aber es ist auf jeden Fall möglich.
+Das sind die CE-Typen nochmal.
+Und hier nochmal das Bild, was das BMX im Prinzip verweilt hat. Wir haben hier unten eine Platz mit einem Barcode, mit einer Platznummer, mit einem Platzcode.
+Auf diesem Platz liegt eine Palette. Die hat auch eine eigene Nummer im Barcode-Kurschlüssel. Da liegt ein Tablar drauf.
+Und da kann Bestand drauf liegen. Wir können auch so eine Dreierkombination haben. Palettes, Tablar, Behälter und dann noch der Bestand.
+Der Bestand kann auch natürlich direkt nach der Palette liegen. Wir können Bestand in Paletten im Behälter haben.
+Und wir sprechen immer von der unteren CE als der Träger CE und von diesen aufliegenden CE als die aufliegende CE.
+Das sind zwei Begriffe, die bei uns auch häufig vorkommen.
+Dann gucken wir uns nochmal die CE an.
+Die CE-Typen sind hier oben.
+Wir können uns einmal die CE-Typen angucken.
+Also wir haben hier noch einmal die Behälter. Wir haben AKL-Behälter und das Pfeilbar-Behälter, Container.
+Dann haben wir diverse Europaletten, Hitterboxen, Versandkartons. Und das ist immer das Eigengewicht des CE-Typs.
+Dann haben wir viele Kennzeichen, was man mit dieser CE alles machen kann. Ganz hinten haben wir die auch wie die Abmessung der CE.
+Und hier haben wir in der Maske CE. Das sind die CE, die wir aktuell im Lager haben.
+Schauen wir mal, ich habe jetzt noch ein kleines Stückchen.
+Ich muss mal gerade... Moment, hier.
+Ich habe nicht die richtige Date, dafür würde ich diese Studie erst einmal gerade laufen, das hatte ich vorhin, als wir mit dem Einloggen umgemacht haben, habe ich vergessen, was zu machen.
+Dann mache ich eben, dass wir ein entsprechendes Atemsystem haben, wo ich dann einmal etwas besser zeigen kann.
+Das geht aber relativ fix, hoffe ich.
+Das sind die CE, die wir haben und wir sehen diese CE, hier haben wir ein Pfeil der Verträger CE.
+Wenn diese CE, wenn es hier irgendwo hier ausgesetzten CE gäbe, würden wir hier das sehen, das haben wir aber nicht.
+Also die CE steht direkt auf dem Platz und zwar auf dem Platz 1AP, 101AP, das ist der Überwagerplatz zum Lager für den Wahneingang.
+Das heißt, wir haben hier nicht den Stand, dass wir halt den Stand vereinnahmt haben im Wahneingangsbereich, aber die CE sind noch nicht eingelagert worden.
+Wir sehen hier den Isstplatz, wir sehen als Freudeziel einen Überwagerplatz zum Lagerplatz und dann sehen wir als Endziel den Lagerplatz selber.
+Der CE-Tipp ist eine Europlanette, hier haben wir noch eine Tragamtkiste, hier haben wir auch noch ein paar Behälter.
+Die Bestandsmenge auf der CE und hier haben wir die Attitö, die auf der CE reißen und der Lagerort ist nicht so wichtig, das ist ein logischer Lagerort.
+Bei dem Bestand, wir unterzeigen zwischen WE, BMS und BA, WE-Lagerort, das sind CE, die noch nicht eingelagert worden sind, der Lagerort BMS.
+Eine kurze Frage.
+Ja.
+Noch mal eben kurz in die Spalte, der Platz-Folgeziel, was ist genau so ein Platz?
+Das ist ein Übergabeplatz.
+Also es ist manchmal, manchmal müssen wir, jetzt kommen wir gleich nochmal zu, manchmal müssen wir ja Teiltransporter anlegen.
+Also vom Wahneingang, vom Übergabeplatz zum Wahneingang geht es an den Übergabeplatz zum Eingang in das Talettenlager 1 und von dort aus geht es dann weiter.
+Das heißt, das haben hier im Prinzip zwei Transporte, das heißt hier würde normalerweise ein Fahrzeugwechsel stattfinden.
+Okay.
+Also der große Startlager kann den Wahneingang rumfahren, er bringt es zum Talettenlager, kann aber nicht ins Talettenlager reinfahren,
+das kommt dann in ein anderer Startlager und holt dann diese CE von diesem Platz und bringt es dann zum endgültigen Ziel.
+Okay.
+So.
+Gut.
+Das war die CE.
+Und jetzt kommen wir zum Artikel.
+Zum Artikel und Beständnis.
+Auch hier nochmal so ein Übersichtsbild von den wichtigsten Projekten.
+Und wir haben hier einen Bestand, der besteht auf einer Menge von diesem Artikel.
+Der Artikel ist zugeordnet einem Mandanten und wenn man will nochmal ein Werk, das kommt aus der SHP-Welt, da unterteilen wir die Mandanten nochmal unterschiedliche Werke.
+Wir haben aber eigentlich in der Regel immer das Werk 0000, weil wir benutzen das nicht.
+Der Bestand liegt auf einer CE und die CE wiederum auf einem Platz.
+Eine Reservierung könnte sich auf diesen Bestand beziehen, das heißt der Bestand kann reserviert sein für einen Auftrag.
+Wir haben die Möglichkeit, dass wir sagen, der Bestand soll in die Inventur, dann würde sich eine Inventurposition auch auf diesen Bestand beziehen.
+Der Artikel, der hat ein zugeordneter CE-Typ oder mehrere.
+Wir können auch eine Artikel-Artikel-Zuordnung machen, das heißt da haben wir dann Stücklisten definiert.
+Der Artikel ist zugeordnet einer Artikelgruppe.
+Und dann, lasst doch noch lesen, ist der Artikel einem Bestandsmanager zugeordnet.
+Das ist eigentlich nichts anderes als ein Name für eine Sammlung von Bestandsabdeutungen.
+Also der gibt hier an, welche Bestandsabdeute für diesen Artikel relevant sind.
+Jetzt muss ich mal gucken, ob da mehr zu tun ist.
+Hier ist der Bestandsmanager.
+Also ein Bestandsmanager ist nichts anderes als in erster Nährung eine Kombination von Attributen, die für den Bestandsartikel zugeordnet sind.
+Also ich könnte sagen, ich habe einen Bestandsmanager, der heißt MHD-Charge.
+Da sind vielleicht die Standardattribute dabei. Dazu plus MHD und Charge.
+Oder Chargen Datum, das ist Charge und Charges Datum.
+Ich habe einen Seriennummern ab Bestandsmanager.
+Da kommen die Seriennummern nochmal ein bisschen.
+Sind denn Seriennummern bei Ihnen irgendwie ein Thema?
+Nein.
+Gut, dann gehen wir nochmal zurück.
+Das war das Thema Bestandsmengen.
+Da kommen wir nachher nochmal zu.
+Ja, typischerweise werden Artikel in dem MOST-System und dem BMS geführt.
+Und die Standarten werden vom MOST an das BMS übermittelt und müssen dort durch die lagerstätischen Angaben ergänzt werden.
+Und im PSI BMS führen wir die Bestandtittenartikel.
+Das heißt, wir wissen die Menge, wir wissen die Bestandsplatteinheit und wir wissen den Platz in den Lagerhäusern.
+Und die bestandsfremden Attribute werden eben über diese Bestandsmanager festgelegt.
+So, jetzt kommen ganz viele Folien, wo die ganzen Attribute zum Artikel beschrieben sind.
+Aber wir gucken uns das direkt in das System an.
+Die Artikelmaske von hier.
+Und gucken wir mal in den inneren Modus.
+So, das sind also, wir können, zu einem Artikel haben wir glaube ich über 100 Attribute, die wir führen können.
+Man muss sich dann in der Spezifikationsdauer einigen, welche Attribute man tatsächlich wirklich braucht.
+Ich meine Standard-Attribute, die sind klar.
+Also das, was man normalerweise immer braucht, ist jetzt hier in dem Standardsystem drin.
+Und auf so ein Standardsystem setzen die auch auf.
+Aber es könnte sein, dass sie sagen, wir brauchen aber auch mal Farbe und Größe, weil wir Textil haben oder Schuhe.
+Oder wie braucht man noch die Kollektion oder irgendwelche anderen Attribute, die im Standard jetzt erstmals sichtbar sind.
+Aber die könnte man dann dazu konfigurieren.
+Also wie gesagt, hier oben haben wir diese Kopfdaten.
+Das ist der Mandant, das ist der Artikel.
+Hier sehen wir, dass Bestands vorhanden ist.
+Wir haben die Artikelgruppen normal und intern.
+Das ist ein normaler Artikel, das heißt, das ist ein Host-Artikel.
+Die BMS-Daten, also die lager-spezifischen Daten, sind belegt.
+Und hier haben wir noch mal die Artikel bezeichnet.
+Also wir haben immer eine Artikelnummer, wie Sie sehen können.
+Kann dieser einfach numerisch sein.
+Und der haben wir hier.
+Und wir haben hier die Artikel bezeichnet, also das ist ein anderes Artikel.
+Dann haben wir hier auf dieser Weiterkonfiguration den Standmännchen.
+Das hatte ich ja eben erläutert.
+Dann haben wir hier noch den Artikel 5.
+Normaler Artikel 5.
+Ich möchte mich kurz einklinken.
+Ja, wer ist das?
+Peter.
+Ja, gut, Herr Peter.
+So, nochmal eben zu dem Bestandsmanager.
+Die Möglichkeit nach Seriennummer.
+Könnte diese auch von uns geführt werden,
+dass wir als Seriennummer eine Lieferantennummer einfragen.
+Denn wir haben verschiedene Lohnverhedler.
+Und wir könnten da sehr schnell selektieren,
+wenn wir von bestimmten Chargen zugreifen möchten.
+Diese Lieferantennummer wäre aber sicherlich über mehrere Bestände gleich.
+Also wir haben, glaube ich, wenn ich mich nicht ganz freute, haben...
+Moment, ich werde hier immer in den Artikel.
+Ähm...
+Hier noch konfigurieren.
+Einsicht.
+Also Lieferanten können wir auf jeden Fall eingeben.
+Das ist wahrscheinlich das hier.
+Wäre auf jeden Fall für uns sinnvoll,
+da ich auch verschiedene Artikel von mehreren Lieferanten bekomme.
+Und um da explizit auswählen zu können,
+dann bestimmt nachverfolgen.
+Ich bin jetzt im Artikel.
+Entschuldigung, ich bin jetzt im Artikel.
+Diese Lieferantennummer gehören natürlich im Bestand und nicht im Artikel.
+Oder haben Sie den Lieferanten...
+Dann könnte ich da nachselektieren, das wäre auch gut.
+Ja, die Lieferantennummer wäre im Bestand und wir haben immer...
+Für jedes Objekt haben wir drei bis fünf Info-Failer,
+wo Sie dann wirklich was reinschreiben können.
+Also die können wir dann auch umbenennen.
+Was weiß ich, Bestandsinfo 1 können wir umbenennen und sagen,
+das ist die Lieferantennummer.
+Da haben Sie auf jeden Fall die Möglichkeit, diese Lieferantennummer zu machen.
+Das Seriennummernfail kann Sie dafür nicht verwenden,
+weil die Seriennummer ist wahrscheinlich eindeutig.
+Die darf man einmal vorgeben.
+Völlig korrekt, deswegen.
+Ich müsste ja irgendwie nachher auch selektieren können, wenn ich halte.
+Ja, das können Sie machen.
+Wenn wir in die Bestandsmaske gehen, dann sehen Sie,
+dass man das noch mal zu feinen hat.
+Schauen wir nochmal hier mit der Bestands...
+Hier wie gesagt, die verschiedenen Bestandsmanager, die wir haben.
+Also je nachdem sind unterschiedliche Attribute interessant.
+Wie gesagt, Standard ist...
+Das heißt, wir haben ein paar Standardattributen für den Bestand.
+Artikeltyp weiß ich vorhin dabei.
+Wir haben ein Fachungstyp, also auch ein TE-Typ könnte auch ein Artikel sein.
+Wenn wir zum Beispiel Lehrungszeiten führen,
+dann müssen wir diesen TE-Typ auch als Artikel führen.
+Dann haben wir lokale Artikel.
+Das kann ja wie Berufmaterial oder so noch sein.
+Interessant ist nochmal Dienstleistung.
+Dienstleistungsartikel haben wir oft in den Reifenlagern.
+Da ist es so, dass die Reifen zum Teil,
+wo sie ausgeliefert werden, zum Beispiel auf Felgen ausgezogen werden.
+Das ist eine Dienstleistung, die erbracht wird.
+Diese Dienstleistung soll auch auf dem Liefertein stehen.
+Und damit sie auf dem Liefertein stehen,
+müssen sie eine entsprechende Auftragsposition geben.
+Die Auftragsposition muss sich natürlich auf einen Artikel beziehen.
+Und dann haben wir einen Artikel von Zyprinsleistung,
+der heißt dann im Felgen aufziehen.
+Dann kann man das auch auf dem Liefertein oder auf der Rechnung aufstehen.
+Dann kann man sagen, ob Zulagerung erwünscht ist oder nicht.
+Dann haben wir hier die Möglichkeit,
+ich sage mal in erster Näherung, einen bevorzugten Lagerbereich,
+wo dieser Artikel einzeln lagert, ist auszuwählen.
+Also wir haben hier die verschiedenen Palettenlager,
+Fahrganglager,
+die Artikel reichen auch so,
+wie sie jetzt also bei uns im Flussystem in die entsprechenden Lagerbereiche abfielen.
+Dann haben wir den Flifo-Typ.
+Flifo ist ja klar, das ist ebenfalls dauer.
+Da muss ein Datum erfasst werden, wenn wir den Waren Eingang haben.
+Wir können hier genau nach Datum und Uhrzeit auf den Tag genau,
+Woche, Monat, zwei Monate genau, Quartal, sechs Monate oder Jahr.
+Monat machen wir typischerweise.
+Das bedeutet nicht anders,
+wenn ich einen Waren Eingang am 5. des Monats habe,
+dass das Flifo-Datum auf den 1. des Monats gesetzt wird.
+Das ist einfach, ich kann mal so eine Art Umgebungspfiffo.
+Sie können es aber, wie gesagt, auch ganz genau führen.
+Das kann aber unter Umständen ein Problem führen, wenn Sie viele Blockplätze haben
+und die Blockplätze FIFO rein sein sollen, dann haben Sie eventuell sehr schnell
+nicht die Position, die Sie Plätze belegt.
+Dafür gibt es aber auch noch eine andere Lösung, und zwar hier diese FIFO-Tage.
+Da kann ich eine Anzahl Tage angeben,
+innerhalb derer das System das FIFO als gleich ansieht.
+Also wenn ich hier oben FIFO genau oder tagesgenau mache und hier sage,
+was weiß ich, fünf Tage, und ich habe einen Blockplatz und es auf dem Blockplatz
+ist ein Bestand mit dem FIFO-Datum Voter Erster, dann würde ich auch eine Palette
+auf diesen Platz bringen können, der die am 7.1. eingereignet worden ist,
+aber nicht mehr am 8.1., also das ist also so eine rolliere FIFO-Fenster.
+Die Möglichkeit habe ich auch, die Auslagerreaktion ist erst mal noch nicht so interessant,
+dass sich die Autarktposition nicht schließen soll, kann ich angeben, dann habe ich die
+Möglichkeit, die Kommissionierart anzugeben, baruzumann, man verwarbe alle, alles je nach dem,
+und dann habe ich hier für die Seriennummern-Erfassung verschiedene Einstellungen,
+die ich machen kann, aber wenn sich die Seriennummern uninteressant sind,
+dann verspringe ich das dann einfach. Dann haben Sie hier hinten noch die APC-Tage,
+Sie können eine Nachzugsfrage angeben, Sie haben eine Kommissioniereinfolge, die Sie
+angeben können, das ist die Möglichkeit, einfach schwerer Artikel vor leichter Artikel einzubotieren,
+also normalerweise gibt es ja eine Entgamesortierung, also ein Weg, ein optimierter Weg, wie man
+artikeln soll, aber diese Kommiereinfolge übersteuert das einfach, sodass zuerst diese Artikel mit einer
+kleineren Kommiereinfolge gepiekt werden, vor Artikeln mit einer größeren Einfolge, also ich kann
+hier 10, 30 zum Beispiel vergeben, und erst werden die 10er gezieht, dann die 20er, dann die 30er,
+damit kann ich verhindern, dass die Eier unten sind und die Porte hier oben.
+So, das war jetzt diese Kooperation weiter, dann haben wir auf dem Reiter Boost, da haben wir einmal
+die Möglichkeit, die EAN, diese European Artikelnummer einzutragen, dann haben wir,
+wenn es MHD-Artikel sind, dann können wir sagen, wie viele Tage müssen die Bestände mindestens noch
+haltbar sein, damit sie sich vereinnahmen dürfen, oder wie viele Tage müssen die mindestens noch
+haltbar sein, bevor sie sich respektieren können, und dann haben wir hier eine relativ wildzügliche
+Auswahl an Gefahrsgut-Attributen, ist Gefahrsgut bei Ihnen ein Thema?
+So, Gefahrsgut?
+Ja, wir haben schon ein paar.
+Haben Sie Lösungsmittel?
+Ja, wir haben schon ein paar.
+Wir haben schon ein paar.
+Das heißt, Gefahrsgut ist für Sie dann schon ein Thema?
+Ja.
+Also wir haben, wie gesagt, hier, wir haben glaube ich 15, 15 Gefahrsgut-Attribute, die hier sind,
+so wie sie gängig sind, da haben wir schon ein paar.
+Also da kann man auf jeden Fall dann viele Gefahrsgut-Attribute verbreiten.
+Wie dann ein Prozess mit dem Gefahrsgut umgesammelt werden muss, das ist natürlich immer sehr
+projektspezifisch, das müssen Sie in der Spezifikationsphase mit den Kollegen da
+besprechen.
+Das heißt, das ist natürlich immer sehr projektspezifisch, das müssen Sie in der Spezifikationsphase
+mit den Kollegen da besprechen.
+Das ist natürlich immer sehr projektspezifisch, das müssen Sie in der Spezifikationsphase mit den Kollegen da besprechen.
+Das ist, dass Sie diese Gefahrsgut-Artikel in einem besonderen Lagerbereich gehören,
+dann ein Verbot und ähnliche Dinge, das müssen Sie dann in der Spezifikationsphase festlegen,
+was da passieren soll.
+Dann haben wir den Reiter Maße, einmal die Mengenreinheit.
+Das ist ein Lieblingsstück, da kann ich offen. Wir können aber auch Volumen und wir können auch
+Zentimeter, Meter, Bissimeter, Gewicht. Wie gesagt, wir lieben Stück, weil das ist am einfachsten,
+wenn Sie Meterware haben und funktionieren wollen, müssen Sie besondere Prozesse zum Beispiel installieren,
+damit die Meterware auf dem Stück abgelenkt wird. Wenn Sie 100 Meter bestellt haben, wenn der Auftrag 100 Meter braucht,
+dann soll der Kunde sicherlich nicht zweimal 50 Meter haben.
+Um solche Sachen zu verhindern, müssen Sie solche Prozesse machen, eventuell besondere Auslagerplätze,
+wo die entsprechenden Mengen erstmal hergestellt werden oder ähnliche Dinge. Oder wenn Sie Kilogramm haben,
+dann müssen Sie auch noch eine Stelle haben, wo Sie es abbiegen können. Sie können ja nicht einfach so
+mit dem Kombinwagen durchgehen und es zurück und dann kann man abbiegen.
+Also das sind immer die speziellen Prozesse zu definieren. Deswegen sage ich, also am liebsten ist bei uns Stift,
+das geht gut. Wie sieht es bei Ihnen aus? Haben Sie auch ein Stückartikel auf andere Mengen einhalten?
+Wir sprechen hier von einer fertig waren, wo Sie die Kilogramm darunter von Halbpapier haben.
+Ich verstehe Sie ganz schnell.
+Wir sprechen von einer fertig waren, wo Sie den Halbpapier haben. Und das ist da so, wenn die Stiftereicherung noch wegfällt.
+Die Stiftereicherung ist da noch.
+Also ich habe nur die erste verstanden, aber ich habe verstanden, dass das das meiste Wurststück ist bei Ihnen.
+Ja, genau.
+Okay, gut. Dann haben wir hier die Abmessung von dem Atelier. Die sind die manchen kennengespielt.
+Und wir haben hier hinten die Abmessungseinheit. Hier steht Millimeter. Deswegen sind hier auch Millimeter.
+Ich kann das aber ändern und sage, ich will das in Meter abmessen. Es stehen hier auch die Meter.
+Also das ist völlig egal. Ich kann das auch in wenigen Kilometer abmessen.
+In der Lagewand werden diese Angaben immer in sogenannten Warteslängen einhalten.
+Was Sie hier wählen, ist eigentlich nur den Umrechnungsfaktor für die Anzeige.
+Wenn Sie gerne Zentimeter messen wollen, wählen Sie hier Zentimeter aus.
+In der Lagewand steht sowieso in Millimeter. Und für die Anzeige wird es entsprechend dieser Anzeige hier umgeändert.
+Das Gleiche verhält sich hier mit dem Volumen und dem Gewicht.
+Hier haben wir Gewicht in Gramm, hier haben wir Volumen in Kubik Millimeter.
+Das kann ich auch ändern. Ich habe Kubik Meter und das Gewicht in Kilogramm.
+Und das wird einfach in der Anzeige entsprechend umgerechnet.
+Also in der Datenbank mit Milligramm, Kubik Millimeter und Millimeter als Abmessung als Warteslänge einhalten.
+Dann haben wir hier noch einen Reiter Inventur.
+Da haben wir die Möglichkeit eine Nahen-Null-Inventur-Menge einzugeben.
+Das heißt, da müssen wir sie noch aufholen. Wir haben ja im Prinzip im Netz unterstützen wir die sogenannte permanente Inventur.
+Das heißt, immer wenn Bestand irgendwie in die Hand genommen wird, wird es gezählt.
+Das ist einmal beim wahren Eingang, aber auch beim Kommissionieren.
+Und wenn beim Kommissionieren die Quell-TE buchungstechnisch mehr wird oder eine Menge hat, die ich jetzt hier eingeben würde,
+dann wird der Kommissionierer aufgefordert auf der Quell-TE den Bestand nochmal zu zählen und zur Bestätigung oder eben zu korrigieren,
+damit die Buchungsmengen mit der physischen Menge übereinstimmen.
+Und da kann ich eben hier diese Nahen-Null-Inventur-Menge eingeben oder auch nur Null.
+Also typischerweise liegt man hier in einer relativ kleinen Zahl ein, sodass der Kommissionierer dann halt zählen kann.
+Ja, dann haben wir hier verschiedene Möglichkeiten zu spezifizieren, wie eine Inventur durchzuführen ist.
+Also undefiniert heißt eine Nachzählung ist nicht so zwingend erforderlich.
+Ich kann auch sagen buchen, also wenn es Differenzen gibt, soll nicht nachgezählt werden, es muss direkt gebucht werden.
+Oder ich habe die Möglichkeit zu sagen, wenn die Differenz größer als eine bestimmte Menge ist, eine bestimmte Prozentzahl oder ein bestimmter Wert,
+dann soll nachgezählt werden. Und in dem Fall, je nachdem, was ich hier aufbinde, wenn ich sage,
+wenn ich sage, die Differenz ist größer als eine abweichende Menge, dann kann ich sagen, wenn es mehr als fünf Stück sind, die abweichen,
+dann muss nachgezählt werden. Oder wenn es mehr als zehn Prozent sind, muss nachgezählt werden.
+Oder wenn dann die Differenz nicht im Wert ausdrückt von mehr als zehn Euro, dann soll nachgezählt werden.
+Und da muss ich dann entsprechend hier was auswählen.
+Ich kann auch fest eine Anzahl der Nachzählungen angeben und ich kann hier noch mal die Nachzählung voll durch einen anderen Anwendungsbeutel.
+Wenn ich denn ein Filternartikel hätte, würde er hier stehen und die anderen beiden Reiter des Filters haben.
+So, und dann schließe ich das jetzt erstmal. Nehmen wir den noch, möchte ich nicht.
+Achso, und was ich noch zeigen wollte, ist noch mal die Zuordnung von dem TE-Typ zu dem Artikel.
+Das kann ich entweder aus der Detailmaske machen, entweder habe ich hier TE-Typ zu Artikel oder hier in der Übersichtsmaske habe ich auch die Möglichkeit,
+TE-Typ zu Artikel zu wählen. Die macht man hier aus. TE-Typ zu Artikel.
+Dann bekomme ich hier diese Maske, die ARTL-TP-Maske. Ich sehe welche man dann in der Artikel.
+Hier sehe ich Informationen zum Artikel und hier sehe ich Informationen zu dem TE-Typ, der ich mir gerade ausgewählt habe.
+Wenn ich hier die andere auswähle, ändert sich das hier oben auch.
+Also wir sehen, in diesem Artikel sind sowohl die Euro-Palette als die Euro-Palette mix zu beordnet.
+Die Euro-Palette ist der Standard TE-Typ. Das heißt, der wird immer vorgeblendet.
+Das ist die Menge, die pro TE-Typ erlaubt ist. Das ist das Gewicht. Und die Länge, Weide und Höhe, sind hier nicht geschlägt.
+Die sind an TE-Typ geschlägt. Und wenn ich jetzt noch mal eine weitere TE-Typ zuordnen möchte,
+dann habe ich die Möglichkeit hier zum Beispiel die Literbox zuzuordnen.
+Da bekomme ich so einen Zugeordnungsdialog. Links ist immer das, was ich auf der Verfügung habe.
+Und rechts ist das, was ich schon habe. Und mit diesen Klötchen kann ich das da rüberschieben.
+Und von mir aus werde ich noch mal einen Verband herstellen.
+Und dann bekomme ich einen Pop-up-Dialog, in dem die TE-Abmessungen angezeigt werden.
+Und hier wichtig ist, das ist jetzt die Literbox. Dann kann ich verpassen,
+ich kann nur 20 Stück nur rein. Ich kann die Stapelhöhe eingeben.
+Ich kann die Befassung zum Einlagerbereich eingeben, mache ich aber alles richtig. Das ist jetzt die Literbox.
+Und im Versandkarton haben wir noch vier Stück.
+Und da haben wir jetzt hier die Literbox und Versandkarton noch zusätzlich als TE-Typ eingegeben.
+Und dann haben wir auch tatsächlich die Abmessungen auch wieder.
+So, das war die TE-Typ.
+Dann wollte ich noch mal zeigen...
+Also das sind die ganzen Opposite, die ich Ihnen gerade erklärt habe.
+Was hatten wir? Was hatten wir?
+Ja.
+Das wollte ich zeigen. Ich habe ja in dieser übrigen Übersicht die Erkramung gezeigt,
+dass wir eine Artikel-Artikelzuordnung haben können.
+Und das heißt, dass wir auch Stücklisten abbilden können. Ich weiß nicht, ob das bei Ihnen relevant ist.
+Da haben wir die Möglichkeit zu sagen, eine Stückliste. Der Stücklistenkopf ist eine Artikel,
+der besteht aus zwei Bestandteilen, wobei der eine Bestandteil sogar noch eine weitere Stückliste ist.
+Das heißt, wir können auch hierarchische Stücklisten bauen.
+Also Stücklisten, ein ganz einfaches Beispiel, ein Tisch.
+Der besteht aus einer Tischplatte und vier Tischbeinen und acht Schrauben und acht Unterlegscheiben.
+Das wäre so eine Stückliste für den Artikel-Tisch.
+So was können wir über die Artikel-Artikelzuordnung definieren.
+Ist das etwas, was für Sie relevant ist?
+Es könnte in jedem Fall relevant sein, wenn man die Frage stellt, ob diese Stückliste in einem Artikel
+gebildet werden kann für diesen temporären Zeitraum ab.
+Also ich definiere die Stückliste und ich kann dann auch Zwerge erstellen,
+die mir praktisch Hitting-Auswege erstellen, die mir diese Stückliste zusammenbauen.
+Also die Stückliste an sich ist, also die Zuordnung, die besteht, die können Sie auch wieder löschen, klar.
+Ja, wenn man die Zeit hat, wenn man welche zieht, ist man nur zum einen Zeitraum,
+wo die Stückliste abgebildet werden.
+Ja, also löschen können Sie natürlich jederzeit wieder, also das ist kein Thema.
+Ja, okay.
+Gut.
+So ein Artikel hat eine oder mehrere Bestandspositionen und eine Bestandsposition,
+das ist aber die Menge eines Artikels, hat bestimmte Attribute, Bestandsattribute,
+und die können nur mit Bestandspositionen, mit identischen Bestands, kann man vereinigt werden.
+Also ich kann nicht einen Bestand, der einen MHB von 31.12. hat,
+also die zwei kann ich nicht zusammenzulagern.
+So ein Bestand steht immer auf einer Transporteinheit,
+und der Bestand kann zweiterfügbar reserviert oder gestärkt sein.
+Jetzt ist mal dieser Punkt hier, ist immer einer Transporteinheit zugeordnet.
+Da kann es auch sein, dass ich einen Artikel habe, einen Bestand habe,
+der ist ein Großartikel, ein großes Stück, ein Heizkessel.
+Das ist ein Artikel, und der sollte von TTI BMS aus eigentlich auf einer TE stehen,
+weil nur die TE auf den Platz gebucht wird.
+Also so eine Heizkessel werde ich vielleicht normalerweise nicht auf eine TE laden,
+sondern der wird einfach so eingelagert.
+Und für den Fall haben wir auch virtuelle Transporteinheiten, die wir verwenden können.
+Also da gibt es ein TE für virtuelle Transporteinheit,
+und dann wird dieser Heizkessel auf diese Transporteinheit gebucht,
+und dann wird diese Transporteinheit auf den Platz gebucht.
+Bestands, also wenn wir sehr viele TE haben, dann ist immer der MP an diesem Platz gebucht.
+Das ist auch wichtig zu wissen.
+Und der Bestand ist verfügbar, wenn er nicht reserviert ist,
+wenn die TE nicht gesperrt ist, wenn der Platz oder die Teilbereiche nicht gesperrt ist,
+und der Bestand nicht auf Sonderpreisen steht.
+Also Bestände auf dem wahren Eingangspass oder auf dem X-Platz,
+der wird als nicht verfügbar gekauft.
+So, jetzt wird sich das noch...
+Artikel hatte ich ja eigentlich gezeigt.
+Dann will ich nochmal zeigen, es gibt ja auch den Fall,
+dass man einen Artikel auf dem PSI BMS anlegen möchte,
+oder aber die Artikeldaten ergänzen soll.
+Da haben wir die Möglichkeit, den Artikel zu selektieren in der Artmitte.
+Dann in der Art W-Maske, ergänzen Sie die Artikel.
+Hier steht immer genau, was man tun muss.
+Das ist also hier so ein bisschen so ein Hochrezept.
+Welche Bildchen finden sich immer wieder in den Folien.
+Hier stehen immer die Masken, in denen was gemacht wird.
+Hier steht, was man in der Maske machen soll.
+Und hier steht so grob der Prozess bestehend.
+Also wir selektieren ein Artikel, wir ergänzen die Daten.
+Ganz wichtig, den TE-Typ zuordnen.
+Eventuell ein TE-Typ aus, die Volltestschen, die Vollständigkeit bestätigen.
+Und dann sind wir fertig mit den logistischen Daten.
+Und das zeige ich jetzt nochmal.
+Artikel.
+In der Artikel 25 kann ich hier anlegen.
+Einen Artikel.
+Das ist ein normaler Artikel.
+Das ist Standardartikel.
+Der soll halt ins Block lager.
+Und bereichnet sie vor auf Genauigkeit.
+Mein Artikel ist natürlich ein Top-Wenner.
+Rostartikel brauche ich nicht.
+Marken könnte ich angeben.
+Da mache ich mal 10 nach 10.
+So lange berechnen, aber nicht so viele Millimeter.
+Wir hätten auch mal 1 Liter.
+Der Topgewicht ist 10 Gramm.
+Und der Topgewicht ist 10,5.
+Zum Beispiel.
+Und bei der Inventur mache ich eine Nahe-0-Zählung ab 5.
+Und ich sage, wenn die Größe abweichert, dann muss nachgezählt werden.
+Und dann sage ich übernehmen, damit dieser Artikel gespeichert ist.
+Und dann kann ich hier einen Te-Typ zu dem Artikel zuordnen.
+Und wenn es kein Te-Typ zu verordnen.
+Und dann nehme ich hier Behälter, Euro-Palette, Literbox.
+Behälter gehen über 10 rein.
+Literbox, wenn die Euro-Palette überhört.
+Und die Literbox über 10.
+Und dann sage ich, dass die Euro-Palette wieder zu T-Fold ist.
+Das muss ich mit T-Fold ändern hier unten.
+Dann bekomme ich hier den Haken.
+Dann kann ich diese Maske schließen.
+Und diese Maske kann ich auch schließen.
+Schließen, genau.
+So.
+Ich habe zuerst zweimal den gleichen Artikel aufgespeichert.
+So, irgendwo.
+Wo ich jetzt hier, kann ich jetzt noch T-Fold 0 und 1 suchen.
+Und da sehen wir haben wir den neuen Artikel.
+So, was ich noch zeigen wollte, für die anderen Artikel.
+Ich kann jetzt von diesem Artikel auch zu der Bestandsmaske wechseln.
+Den ich hier über Bestände gehe.
+Und hier habe ich den Lagerort der SBE.
+Weil dieser Artikel, diese Bestände stehen ja noch hier auf dem 101 AC-Platz.
+Die sind noch nicht eingeladen.
+Die Bestandspläne ist 50 Stück.
+Wenn man sie dann reviert werden wäre, dann würde das hier schon stehen.
+Das ist die TE. Die Träger-TE und die TE sind identisch.
+Weil wir haben keine Träger-TE-Nummer.
+Dann haben wir hier die Bestandsqualifikation, Lieferdatum, Flieger-Datum.
+Jetzt warten wir nochmal hier hin.
+Dann haben wir hier die Bestandsqualifikation, Lieferdatum, Flieger-Datum.
+Jetzt warten wir nochmal hier hin.
+Hier kommen die ganzen Bestands-Trennen-Attribute.
+Und hier haben wir zum Beispiel die Chef-Partner und die Lieferant.
+Dann haben wir auch die Möglichkeit an der Pull-Referenz.
+Also hierfür bitte zum Beispiel Ihre Lieferanten einkaufen.
+Oder Ihre Lieferanten-Nummer.
+Ja?
+Hallo?
+Hört mich jemand?
+Ja, alles klar.
+Das ist immer schwierig, wenn man kein Feedback hat.
+Ja.
+Also die Lieferant-Nummer wäre da.
+Oder ich gucke nochmal, was hätten wir sonst noch anzupiefen an Attributen.
+Gehen wir nochmal in die Statue.
+Also wir haben eine Stell-Stand-Information.
+Da könnt ihr auch eine Nummer hinterlegen, wenn Sie wollen.
+Farbevorgröße, Lieferwert, Menge,
+wäre nur meine Erfahrung.
+Also über Gesamtinformationen könnt ihr auch nochmal eine Nummer hinterlegen.
+Und ganz, also wenn Sie unbedingt was brauchen, was wir nicht haben,
+eine Datenbank-Erweiterung bei der Stelle zu machen, ist das auch kein großes Thema.
+Wir versuchen natürlich erstmal mit dem Datenmodell, was wir haben, im Standard zu arbeiten.
+Aber es ist auch durchaus möglich, das Datenmodell zu ändern
+und dann zusätzliche Effekte einzuführen.
+So, hier habe ich gesehen, das Anfangen hier,
+Gespannsqualifikation und Stärkungen, das ist nur eine mehrere Qualifikation.
+Dann haben wir hier das Lieferdating, wir sehen das FIFO-Dating.
+Das Lieferdating ist der 21.04., das ist heute.
+Weil ich habe jetzt wirklich einen Spukestand laufen lassen, der diese Daten erzeugt hat.
+Und das FIFO-Dating, das sehen Sie, ist hier auf dem 1.04.Gesetz.
+Und das Inventurdating ist auch auf dem 21.04.Gesetz,
+weil sie manchmal im Eingang natürlich die Bestände gezählt haben.
+Das ist also so ein Stück der permanenten Inventur.
+Dann haben wir hier auch noch Verpackungseinheiten.
+Wir haben die Möglichkeit, dreifach verschaffte Verpackungseinheiten zu verwalten.
+Das kann ich zeigen, wenn wir hier...
+Wo ist meine Zigarette?
+So, und danach macht es die Zigarette.
+Dann gehen wir auch hier in die Bestände.
+Dann gehen wir mal hier hin.
+Dann machen wir das alles ein bisschen größer.
+Dann haben wir eine Zigaretten-Schachtel in einer Schankstanne in einem Karton.
+Das ist auch unser Beispiel für die viele Schachtelchen in der Verpackungseinheit.
+Die muss man dann auch über eine TE-Tipp zu TE-Tipp-Zugordnung definieren.
+Gehen wir zurück zu den Beständen.
+Also hier haben wir keine Verpackungseinheiten.
+Das ist der Bestandsmanager von dem Bestand.
+Das ist ein Logo-Schachtel, das ist ein Lager.
+Und hier kommt also MHD, Charge, Lehrlingnummer, Sonderbestandsart, Sonderbestandsreferenz.
+Da können Sie auch Sonderbestandsart veranstalten.
+Zum Beispiel Konsolidationsbestand, Kundenbestand, Lieferantenbestand.
+Da haben Sie auch die Möglichkeit, an welche Informationen zu hinterlegen.
+Referenznummer zu hinterlegen.
+Postlagerorte, auch das kommt eher aus der FHC-Welt.
+Die buchen auch die Bestände von einem Postlagerort zum anderen um durch bestimmte Prozesse.
+Das ist ein Geschäftspartner. Das könnte der Kunde sein oder der Lieferant.
+Das haben Sie als Kundenreferenz.
+Hier sehen Sie, dass diese Bestände alle aus dem Aris 1001 gekommen sind.
+Aus der Position 1.
+Wenn dieser Bestand für einen Auftrag reserviert wäre,
+würden auch die Bestände aus dem Aris 1001 gerettet werden.
+Grundsätzlich ist es immer so, dass hier in den Städten der Besten Arten das, was interessant ist,
+immer hier in dem sichtbaren Teil ist, sondern immer weiter nach rechts manipuliert ist.
+So, gucken wir mal nochmal.
+So, und jetzt kommt als Letztes für heute, moment mal.
+Als Letztes kommt für heute, das sind wir eigentlich am Ende der Zeit, die Übung Artikel-Flege.
+Das ist die nächste Übung.
+Das ist die Übung 2.
+Artikel-Flege, ich mache das mal auf.
+Da geht es darum, das, was ich eben gezeigt habe, einen neuen Artikel anzulegen,
+dem Artikel 2 TE-Tippen zu zuordnen, unter maximaler Länge einzugeben,
+einen TE-Tipp zum Standard zu setzen. Achso, und das WMS darf ein OK setzen, das vergesse ich auch immer.
+Wenn ich jetzt nochmal in meinen Artikel-Übersicht gehe
+und meinen Artikel ausrege, in den Endenmodus gehe.
+Wenn ich fertig bin mit meinen logistischen Daten, dann muss ich dieses Häkchen setzen.
+Das ist ganz wichtig, denn wenn Sie das Häkchen nicht gesetzt sind, darf ich keine Vereinnahmung durchschneiden.
+Also müssen Sie das auf jeden Fall, wenn Sie Ihren Artikel angelegt haben,
+machen Sie dann im Artikel das Kennzeichen werden, es darf ein OK.
+Und dann haben Sie Ihren Artikel manuell im System erfasst.
+Und wie man hier im Einzelnen vorgeht, steht dann hier unter Vorgehen.
+Und dann wünsche ich jetzt viel Spaß.
+Ich würde sagen, das dritte Schor ist den Vorkopf, den wir jetzt machen.
+Und dann kann man noch Fragen beantworten, und dann sind wir in der Zeit.
+Das ist die letzte Übung für heute.
+Ich bin hier um Fragen zu beantworten.
+Vielen Dank.
+Vergesst Sie nicht, wenn Sie Ihren Artikel angelegt haben,
+übernehmen zu drücken, bevor Sie auf TE-Typ zuordnen und drücken.
+Weiterhin bekommen Sie eine Fehlermeldung, weil der Artikel noch nicht gespeichert ist.
+Aber Sie müssen auf jeden Fall Ihren Artikel nicht übernehmen,
+speichern, bevor Sie die TE-Typ zuordnen und durchführen.
+Vielen Dank.
+��고
+War das eine Frage an mich?
+Nein.
+‑‑ — Okay.
+Das war's für heute, vielen Dank für's Zuhören, bis zum nächsten Mal, tschüss, tschüss, tschüss.
+Vielen Dank für's Zuhören, bis zum nächsten Mal, tschüss, tschüss, tschüss.
+Vielen Dank für's Zuhören, bis zum nächsten Mal, tschüss, tschüss.
+Vielen Dank für's Zuhören, bis zum nächsten Mal, tschüss.
+Vielen Dank für's Zuhören, bis zum nächsten Mal, tschüss.
+Vielen Dank für's Zuhören, bis zum nächsten Mal, tschüss.
+Vielen Dank für's Zuhören, bis zum nächsten Mal, tschüss.
+Vielen Dank für's Zuhören, bis zum nächsten Mal, tschüss.
+Vielen Dank für's Zuhören, bis zum nächsten Mal, tschüss.
+Vielen Dank für's Zuhören, bis zum nächsten Mal, tschüss.
+Vielen Dank für's Zuhören, bis zum nächsten Mal, tschüss.
+Vielen Dank für's Zuhören, bis zum nächsten Mal, tschüss.
+Vielen Dank für's Zuhören, bis zum nächsten Mal, tschüss.
+Vielen Dank für's Zuhören, bis zum nächsten Mal, tschüss.
+Vielen Dank für's Zuhören, bis zum nächsten Mal, tschüss.
+Vielen Dank für's Zuhören, bis zum nächsten Mal, tschüss.
+Vielen Dank für's Zuhören, bis zum nächsten Mal, tschüss.
+Vielen Dank für's Zuhören, bis zum nächsten Mal.
+Vielen Dank für's Zuhören, bis zum nächsten Mal, tschüss.
+Vielen Dank für's Zuhören, bis zum nächsten Mal, tschüss.
+Vielen Dank für's Zuhören, bis zum nächsten Mal, tschüss.
+Vielen Dank für's Zuhören, bis zum nächsten Mal, tschüss.
+Vielen Dank für's Zuhören, bis zum nächsten Mal, tschüss.
+Vielen Dank für's Zuhören, bis zum nächsten Mal, tschüss.
+Vielen Dank für's Zuhören, bis zum nächsten Mal, tschüss.
+Vielen Dank für's Zuhören, bis zum nächsten Mal, tschüss.
+Vielen Dank für's Zuhören, bis zum nächsten Mal, tschüss.
+Vielen Dank für's Zuhören, bis zum nächsten Mal, tschüss.
+Vielen Dank für's Zuhören, bis zum nächsten Mal, tschüss.
+Vielen Dank für's Zuhören, bis zum nächsten Mal, tschüss.
+Vielen Dank für's Zuhören, bis zum nächsten Mal, tschüss.
+Vielen Dank für's Zuhören, bis zum nächsten Mal, tschüss.
+Vielen Dank für's Zuhören, bis zum nächsten Mal, tschüss.
+Vielen Dank für's Zuhören, bis zum nächsten Mal, tschüss.
+Vielen Dank für's Zuhören, bis zum nächsten Mal, tschüss.
+Vielen Dank für's Zuhören, bis zum nächsten Mal, tschüss.
+So, wie sieht's aus?
+Wer hat noch nicht ein Artikel fertig angelegt?
+Braucht jemand noch mehr Zeit?
+Ich habe keine Antwort bekommen und ich kann nur ausdenken, dass jetzt alle die Übungen abgeschlossen haben.
+Das war jetzt dann das letzte für heute.
+Wir haben also heute Morgen ein paar Grundlagen kennengelernt.
+Die Systemlandschaft, die Bedienoberfläche und jetzt grundlegende Objekte, die wir in den IVMS haben kennengelernt und jetzt zum Schluss die Artikel-Schläge gemacht.
+Morgen ist der Waren-Eingang vorgesehen, am Donnerstag dann die Bestandsführung und der Auftragsbearbeitung und am Freitag dann kommissionieren, verpacken, versandt.
+Gibt es denn zu dem, was wir heute gemacht haben oder überhaupt noch Fragen?
+Im Moment nicht.
+Im Moment nicht, da bin ich ja nicht zufrieden, das freut mich sehr.
+Dann würde ich sagen, dass wir das Meeting heute jetzt beenden können.
+Auch Henni, mit Ihrem Problem können Sie da, weiß ich, in der Infrastruktur irgendwie auch Hilfe machen, weil das scheint ja ein lokales Problem zu sein mit der Größe.
+Ja, ich glaube, das hat sich schon erledigt.
+Wir müssten da mal in, wenn wir da wieder wechseln wollen oder so.
+Mir ist das egal.
+Jetzt bleiben Sie auf Schul 1, da haben Sie jetzt was gemacht.
+Aber morgen dann weiter mit dem, was Sie heute gemacht haben.
+Deswegen bleiben Sie dann auf Schul 1, wenn Sie sagen, Sie können da vernünftig arbeiten, dann ist gut.
+Aber ich mag die Vorführung dann auf Schul 5, das ist für mich egal.
+Und wenn Sie dann Ihre Infrastruktur nicht bemühen müssen, dann ist umso besser.
+Und dann würde ich für heute jetzt das Meeting beenden.
+Ich hoffe, Sie können mich auch noch mal als erstes zum Abschieben verabschieden.
+Und machen morgen dann um 9 Uhr wieder weiter.
+So, Alter, ich mache das Meeting wieder so 24 Viertel von 9 Uhr aus.
+Dann können Sie so langsam eintreffen und um 9 Uhr beginnen wir.
+Ist das in Ordnung für alle?
+Ja.
+Gut, dann sage ich vielen Dank für Ihre Aufmerksamkeit.
+Ich hoffe, es war nicht zu anstrengend für Sie jetzt über das Lebeckstab alles aufzunehmen.
+Und bis morgen.
+Ja, Sie wissen es.
+Vielen Dank.
+Bis morgen.
+Tschüss.
